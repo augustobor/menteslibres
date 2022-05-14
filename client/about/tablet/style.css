@@ -1,0 +1,31 @@
+.menu-mobile ul {
+    width: 50vh;
+	padding: 5% 0%;
+    padding-top: 20%;
+}
+
+.menu-mobile li a, .menu-mobile p {
+	padding-left: 10%;
+	font-size: 5rem;
+}
+
+.menu-mobile img {
+    margin: 7%;
+    transform: scale(1.8);
+}
+
+section {
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section article {
+    padding: 2%;
+    width: 60%;
+}
+
+section article p {
+    font-size: 1.8rem;
+    margin-bottom: 2%;
+}

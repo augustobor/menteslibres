@@ -1,0 +1,123 @@
+:root {
+	--palette-good-page: #E6D7BD;
+    --palette-old-page: #D5B59C;
+    --palette-red: #97141A;
+    --just-black: #1C1C1C;
+    --just-white: #FAFAFA;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Nunito', sans-serif; 
+	scroll-behavior: smooth;
+    background-image: url('../../main/imgs/fondo_real.png');
+}
+
+body {
+    height: auto;
+    font-family: 'Rasa', serif;
+}
+
+header {
+    height: 15vh;
+    background-color: var(--palette-old-page);
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.menu-mobile {
+	width: 60%;
+	height: 20vh;
+	position:fixed;
+	top: 0;
+	left: 0;
+	transition: all .5s ease;
+	z-index: 1;
+    font-family: 'Damion', cursive;
+}
+
+.menu-mobile img {
+	cursor: pointer;
+	vertical-align: top;
+	width: 15%;
+	height: auto;
+	margin: 1rem;
+    margin: 5%;
+    transform: scale(1.5);
+}
+
+.menu-mobile ul {
+	background-color: var(--just-black);
+	padding: 5% 0%;
+	padding-top: 20%;
+	list-style: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .5s ease;
+	z-index: -1;
+    border-style: solid;
+    border-color: var(--palette-old-page);
+}
+
+.menu-mobile li a, .menu-mobile p {
+	text-decoration: none;
+	padding: 6% 20%;
+	margin: 1rem 1rem;
+	color: var(--just-white);
+	display: block;
+	font-size: xx-large;
+	cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.menu-mobile li a:hover {
+	background-color: var(--palette-good-page);
+    color: var(--just-black);
+} 
+
+.activate {
+	transform: translate(-600px);
+}
+
+.opacity {
+	background-color: var(--black);
+	transition: .5s ease;
+}
+
+
+section {
+    margin-top: 15rem;
+    margin-bottom: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+section article {
+    padding: 10% 20%;
+    text-align: center;
+}
+
+section article p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+section article hr {
+    border-style: solid;
+    border-color: var(--palette-red);
+    border-width: 0.2rem;
+}
