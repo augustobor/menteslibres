@@ -16,7 +16,7 @@ html {
 	font-size: 62.5%;
 	font-family: 'Nunito', sans-serif; 
 	scroll-behavior: smooth;
-    background-image: url('../../main/imgs/fondo_real.png');
+	background-image: url('../../../imgs/fondo_real.png');
 }
 
 body {
@@ -96,8 +96,8 @@ header {
 
 
 section {
-    padding: 5%;
-    margin-top: 2rem;
+    margin-top: 15rem;
+    margin-bottom: 20rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,26 +105,19 @@ section {
     align-items: center;
 }
 
-section h1 {
-    font-size: 5rem;
-    font-family: 'Rasa', serif;
-    color: var(--just-black);
-    margin-bottom: 5rem;
+section article {
+    padding: 5% 10%;
+    text-align: center;
 }
 
-section h2 {
-    font-size: 2.5rem;
+section article p {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
-section h3 {
-    font-size: 1.5rem;
-}
 
-section article div {
-    padding: 4%;
-    text-align: left;
+section article hr {
     border-style: solid;
     border-color: var(--palette-red);
-    margin-bottom: 5rem;
+    border-width: 0.2rem;
 }
-

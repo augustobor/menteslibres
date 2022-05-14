@@ -30,6 +30,15 @@
     transition: all 150ms ease;
 }
 
+section h1 {
+    font-size: 6rem;
+}
+
 section article div {
     margin-bottom: 10rem;
+    padding: 3%;
+}
+
+section article div p {
+    font-size: 3rem;
 }

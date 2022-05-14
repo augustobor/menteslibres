@@ -1,0 +1,64 @@
+:root {
+	--palette-good-page: #E6D7BD;
+    --palette-old-page: #D5B59C;
+    --palette-red: #97141A;
+    --just-black: #1C1C1C;
+    --just-white: #FAFAFA;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0; 
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Nunito', sans-serif; 
+	scroll-behavior: smooth;
+    background-image: url('../../../client/main/imgs/fondo_real.png');
+}
+
+body {
+    height: auto;
+    font-family: 'Rasa', serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    padding: 2%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    margin: 0% 5%;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+section a {
+    padding: 5%;
+    width: 80%;
+    margin: 5% 2%;
+    background-color: var(--palette-old-page);
+    border-style: none;
+    color: var(--just-black);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Rasa', serif;
+    cursor: pointer;
+    transition: all 200ms ease;
+    font-size: 1.5rem;
+    text-decoration: none;
+    align-items: center;
+}
+
+section a:hover {
+    background-color: var(--just-black);
+    color: var(--just-white);
+    transition: all 200ms ease;
+}
