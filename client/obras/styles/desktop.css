@@ -1,0 +1,5 @@
+@import url('../../styles/menu-desktop.css');
+
+.menu-mobile {
+    display: none;
+}

@@ -16,5 +16,5 @@ html {
 	font-size: 62.5%;
 	font-family: 'Nunito', sans-serif; 
 	scroll-behavior: smooth;
-	background-image: url('../../../imgs/fondo_real.png');
+	background-image: url('../../imgs/fondo_real.png');
 }

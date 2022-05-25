@@ -1,23 +1,5 @@
-:root {
-	--palette-good-page: #E6D7BD;
-    --palette-old-page: #D5B59C;
-    --palette-red: #97141A;
-    --just-black: #1C1C1C;
-    --just-white: #FAFAFA;
-}
-
-* {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0; 
-}
-
-html {
-	font-size: 62.5%;
-	font-family: 'Nunito', sans-serif; 
-	scroll-behavior: smooth;
-    background-image: url('../../../client/main/imgs/fondo_real.png');
-}
+@import url('../../../client/styles/config.css');
+@import url('../../../client/styles/menu-cel.css');
 
 body {
     height: auto;

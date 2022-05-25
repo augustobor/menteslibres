@@ -16,7 +16,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 680px)">
     <link rel="stylesheet" type="text/css" href="./styles/desktop.css" media="screen and (min-width: 1000px)">  
     
-    <title>Contacto</title>
+    <title>Obras</title>
 </head>
 <body>
 
@@ -29,9 +29,9 @@
         <ul class="activate" id="menu-content">
             <li><a href="../main/index.html">Inicio</a></li>
             <li><a href="../about/about.html">Quienes somos</a></li>
-            <li><a href="../obras/obras.php">Obras</a></li>
+            <li><a href="#">Obras</a></li>
             <li><a href="../news/news.html">Noticias</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="../contact/contact.html">Contacto</a></li>
         </ul>
     </menu>
 
@@ -39,29 +39,20 @@
         <ul>
             <li><a href="../main/index.html">Inicio</a></li>
             <li><a href="../about/about.html">Quienes somos</a></li>
-            <li><a href="../obras/obras.php">Obras</a></li>
+            <li><a href="#">Obras</a></li>
             <li><a href="../news/news.html">Noticias</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="../contact/contact.html">Contacto</a></li>
         </ul>
     </menu>
 
+    <h1>Obras</h1>
 
     <section>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Sapiente eaque molestias ducimus, rerum consectetur nisi consequuntur. 
-            Soluta corporis laudantium facilis totam, tenetur fugiat, 
-            nobis sunt id sint impedit hic accusamus.
-        </p>
-
-        <form action="" id="form">
-            <input name="name" id="contact--name" type="text" placeholder="Nombre" required/>
-            <input name="email" id="contact--email" type="email" placeholder="Email" required/>
-            <input name="matter" id="contact--thread" type="text" placeholder="Asunto" required/>
-            <textarea name="message" id="contact--message" rows=10 cols="30" placeholder="Mensaje" required></textarea>
-            <button id="submit-button" type="submit" form="form">Enviar</button>
-        </form>
-        <a id="mail-button" href="#"></a>
+        <ul> 
+            <h2>Autores</h2>
+            <?php
+                include("./obras_pgsql.php");
+            ?>
+        </ul>
     </section>
-    <script src="../../menu.js"></script>
 </body>
