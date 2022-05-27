@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 680px)">
-    <link rel="stylesheet" type="text/css" href="./styles/desktop.css" media="screen and (min-width: 1000px)">  
+    <link rel="stylesheet" type="text/css" href="./styles/desktop.css" media="screen and (min-width: 800px)"> 
     
     <title>Obras</title>
 </head>
@@ -47,7 +47,7 @@
 
     <h1>Obras</h1>
 
-    <section>
+    <section id="app">
         <ul> 
             <h2>Autores</h2>
             <?php
@@ -55,4 +55,5 @@
             ?>
         </ul>
     </section>
+    <script src='./lista.js'></script>
 </body>

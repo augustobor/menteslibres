@@ -6,7 +6,7 @@
     
     if($conexion) {
 
-        $sql = 'SELECT nombre, titulo FROM "Contenido" INNER JOIN "Autor" ON "Contenido".id_autor = "Autor".id ORDER BY nombre;';
+        $sql = 'SELECT nombre, titulo FROM public."contenido" INNER JOIN public."autor" ON public."contenido".autor_id = public."autor".id ORDER BY nombre;';
         $resultado = pg_query($conexion, $sql);
 
         $filas = pg_num_rows($resultado);
@@ -15,8 +15,10 @@
         while($filas > 0) {
             
             echo "<li class='autor'>";
+            echo "<div>";
             echo "<h2>".$row[0]."</h2>";
-
+            echo "<img class='menu-arrow' src=../../assets/arrow.svg alt=''/>";
+            echo "</div>";
             echo "<ul>";
 
             $autor_anterior = array(
@@ -29,7 +31,7 @@
                 $row = pg_fetch_row($resultado);
                 $filas--;
             }
-
+            
             echo "</ul>";
             echo "</li>";
         }
