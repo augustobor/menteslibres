@@ -33,22 +33,27 @@ ul, li {
 
 section > ul {
     background-color: var(--palette-old-page);
-    padding: 3%;
-    border-radius: 10px;
-    margin: 0 5%;
+    padding: 1%;
+    margin: 0 3%;
+    border-radius: 2px;
     display: flex;
     flex-direction: column;
 }
 
-section > h2 {
-    font-size: x-large;
+h2 {
+    font-size: 2.4rem;
+    padding: 2%;
+}
+
+h3 {
+    font-size: 1.5rem;
 }
 
 .autor {
     background-color: var(--palette-good-page);
     padding: 2%;
-    border-radius: 5px;
-    margin: 2%;
+    border-radius: 1px;
+    margin: 1%;
     height: 5%;
     transition: all .3s;
 }
@@ -68,6 +73,7 @@ ul > .autor > div {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -77,15 +83,31 @@ ul > .autor > div {
 }
 
 .menu-arrow {
-    transition: all .3s;
+    transition: all .2s;
 }
 
 ul > .arrow .obra {
     display: block;
     height: auto;
     background-color: var(--palette-old-page);
-    padding: 1%;
-    border-radius: 10px;
-    margin: 2% 5%;
-    transition: all .3s;
+    padding: 2%;
+    border-radius: 2px;
+    transition: all .2s;
+    margin-top: 2rem;
+}
+
+ul > .arrow .obra:hover {
+    background-color: var(--palette-good-page);
+    transition: all .2s;
+}
+
+ul > .arrow .obra button {
+    text-decoration: none;
+    color: var(--just-black);
+    font-size: 1.4rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
 }

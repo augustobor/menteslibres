@@ -9,3 +9,13 @@ listElements.forEach(listElement => {
     })
 
 })
+
+let listElementsObra = document.querySelectorAll('.obra');
+
+listElementsObra.forEach(listElement => {
+
+    listElement.addEventListener('click', () => {
+    
+        window.location = "../muestra/muestra.php?titulo=" + listElement.textContent;
+    })
+})

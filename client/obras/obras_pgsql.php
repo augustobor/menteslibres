@@ -16,7 +16,7 @@
             
             echo "<li class='autor'>";
             echo "<div>";
-            echo "<h2>".$row[0]."</h2>";
+            echo "<h3>".$row[0]."</h3>";
             echo "<img class='menu-arrow' src=../../assets/arrow.svg alt=''/>";
             echo "</div>";
             echo "<ul>";
@@ -27,7 +27,9 @@
             );
 
             while($autor_anterior["nombre"] == $row[0]) {
-                echo "<li class='obra'>".$row[1]."</li>";
+                echo "<li class='obra'>";
+                echo "<button class='btn-obra'>".$row[1]."</button>";
+                echo "</li>";
                 $row = pg_fetch_row($resultado);
                 $filas--;
             }

@@ -47,7 +47,7 @@
 
     <h1>Obras</h1>
 
-    <section id="app">
+    <section>
         <ul> 
             <h2>Autores</h2>
             <?php
@@ -56,4 +56,5 @@
         </ul>
     </section>
     <script src='./lista.js'></script>
+    <script src='../../menu.js'></script>
 </body>
