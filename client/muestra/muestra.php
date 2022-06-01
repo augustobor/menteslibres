@@ -2,7 +2,6 @@
     session_start();
     $_SESSION['titulo'] = $_REQUEST['titulo'];
     header('../../muestra/muestra.php');
-    echo $_SESSION['titulo'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +25,12 @@
 </head>
 <body>
 
+    <a href="../obras/obras.php" class="btn-home">
+        <img src="../../assets/arrow-left.svg" alt='botón'>
+    </a>
+
     <?php 
         include('./muestra_pgsql.php');
     ?>
+
 </body>

@@ -6,6 +6,10 @@ header {
     background-color: var(--palette-old-page);
 }
 
+body {
+    font-family: 'Rasa', serif;
+}
+
 img {
 	font-size: 2rem;
 }

@@ -1,8 +1,6 @@
 <?php
     include("../../conection.php");
     error_reporting(0);
-
-    $conexion = pg_connect("host=localhost dbname=pabellon_literario_db user=postgres password=Roma2018");
     
     if($conexion) {
 
