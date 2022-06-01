@@ -24,12 +24,12 @@
 </head>
 <body>
 
-    <a href="../obras/obras.php" class="btn-home">
+    <a href="../news/news.php" class="btn-home">
         <img src="../../assets/arrow-left.svg" alt='botón'>
     </a>
 
     <?php 
-        include('./muestra_pgsql.php');
+        include('./muestra_news_pgsql.php');
     ?>
 
 </body>

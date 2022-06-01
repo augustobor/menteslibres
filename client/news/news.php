@@ -45,45 +45,18 @@
         </ul>
     </menu>
 
+    <h1>Noticias</h1>
+    
     <section>
-        <h1>Noticias</h1>
-        <article>
-            <h2>Titulo 1</h2>
-            <h3>Fecha</h3>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Repellat architecto possimus consequuntur voluptas recusandae. 
-                    Laudantium optio minima tempora et ad in, voluptatum saepe 
-                    aperiam voluptates fugiat harum ducimus earum iste?
-                </p>
-            </div>
-        </article>
-        <article>
-            <h2>Titulo 2</h2>
-            <h3>Fecha</h3>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Repellat architecto possimus consequuntur voluptas recusandae. 
-                    Laudantium optio minima tempora et ad in, voluptatum saepe 
-                    aperiam voluptates fugiat harum ducimus earum iste?
-                </p>
-            </div>
-        </article>
-        <article>
-            <h2>Titulo 3</h2>
-            <h3>Fecha</h3>
-            <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                    Repellat architecto possimus consequuntur voluptas recusandae. 
-                    Laudantium optio minima tempora et ad in, voluptatum saepe 
-                    aperiam voluptates fugiat harum ducimus earum iste?
-                </p>
-            </div>
-        </article>
+        
+    
+
+        <?php
+            include('./news_pgsql.php');
+        ?>
+        
     </section>
 
     <script src="../../menu.js"></script>
+    <script src='./lista.js'></script>
 </body>

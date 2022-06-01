@@ -4,7 +4,7 @@
     
     if($conexion) {
 
-        $sql = "SELECT titulo, contenido FROM contenido WHERE titulo = '$_SESSION[titulo]';";
+        $sql = "SELECT titulo, noticia FROM noticia;";
 
         $resultado=pg_query($conexion, $sql);
         
@@ -12,7 +12,11 @@
             $row = pg_fetch_row($resultado);
             echo "<h1>$row[0]</h1>";
             echo "<p>$row[1]</p>";
-        } 
+        } else {
+            echo "No se encontró el contenido";
+        }
 
-    } 
+    } else {
+
+    }
 ?>

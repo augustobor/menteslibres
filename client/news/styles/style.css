@@ -21,16 +21,19 @@ section {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     flex-direction: row;
     align-items: center;
+    text-align: left;
 }
 
-section h1 {
+h1 {
     font-size: 5rem;
+    text-align: center;
     font-family: 'Rasa', serif;
     color: var(--just-black);
     margin-bottom: 5rem;
+    margin-top: 2rem;
 }
 
 section h2 {
@@ -38,14 +41,31 @@ section h2 {
 }
 
 section h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
-section article div {
+section article .noticia {
+    width: auto;
     padding: 4%;
     text-align: left;
     border-style: solid;
     border-color: var(--palette-red);
     margin-bottom: 5rem;
+    margin-top: 1rem;
+    transition: all 200ms ease;
 }
 
+section article p {
+    font-size: 1.5rem;
+}
+
+.noticia:hover {
+    background-color: var(--palette-red);
+    color: var(--just-white);
+    transition: all 200ms ease;
+}
+
+.noticia:active {
+    background-color: var(--just-black);
+    border-color: var(--just-black);
+}

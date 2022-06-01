@@ -15,9 +15,13 @@
 }
 
 
-section h1 {
+h1 {
     font-size: 8rem;
     margin-bottom: 5rem;
+}
+
+section {
+    padding: 2%;
 }
 
 section article h2 {
@@ -26,7 +30,11 @@ section article h2 {
 
 section article h3 {
     font-size: 3rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
+}
+
+section article div {
+    margin-bottom: 1rem;
 }
 
 section article div p {
