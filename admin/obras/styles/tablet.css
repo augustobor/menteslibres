@@ -1,0 +1,14 @@
+
+h1 {
+    font-size: xx-large;
+    margin-top: 7rem;
+}
+
+input, textarea, select {
+    font-size: 2rem;
+}
+
+form button {
+    width: 30%;
+    font-size: 2.5rem;
+}

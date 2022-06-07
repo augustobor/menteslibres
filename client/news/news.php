@@ -28,7 +28,7 @@
         <img id="menuIcon" src="../../imgs/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
             <li><a href="../main/index.html">Inicio</a></li>
-            <li><a href="../about/about.html">Quienes somos</a></li>
+            <li><a href="../about/about.html">Quiénes somos</a></li>
             <li><a href="../obras/obras.php">Obras</a></li>
             <li><a href="#">Noticias</a></li>
             <li><a href="../contact/contact.html">Contacto</a></li>
@@ -38,7 +38,7 @@
     <menu class="menu-desktop">
         <ul>
             <li><a href="../main/index.html">Inicio</a></li>
-            <li><a href="../about/about.html">Quienes somos</a></li>
+            <li><a href="../about/about.html">Quiénes somos</a></li>
             <li><a href="../obras/obras.php">Obras</a></li>
             <li><a href="#">Noticias</a></li>
             <li><a href="../contact/contact.html">Contacto</a></li>

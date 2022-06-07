@@ -4,7 +4,7 @@
     
     if($conexion) {
 
-        $sql = "SELECT titulo, contenido FROM contenido WHERE titulo = '$_SESSION[titulo]';";
+        $sql = "SELECT titulo, REPLACE(contenido, '#', '<br/><br/>') FROM contenido WHERE titulo = '$_SESSION[titulo]';";
 
         $resultado=pg_query($conexion, $sql);
         
