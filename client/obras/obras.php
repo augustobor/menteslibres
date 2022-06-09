@@ -21,7 +21,7 @@
 <body>
 
     <header>
-        <img src="#" alt="foto_1"/>
+        <img src="./imgs/obras.png" alt="foto_1"/>
     </header>
 
     <menu class="menu-mobile">

@@ -1,9 +1,17 @@
 @import url('../../styles/config.css');
 @import url('../../styles/menu-cel.css');
 
+
 header {
-    height: 15vh;
-    background-color: var(--palette-old-page);
+    height: auto;
+}
+
+header > img {
+    transform: scale(1);
+    width: 100%;
+    border-bottom-style: solid;
+    border-color: var(--palette-old-page);
+    border-width: 0.5rem;
 }
 
 body {
@@ -43,4 +51,16 @@ section article hr {
     border-style: solid;
     border-color: var(--palette-red);
     border-width: 0.2rem;
+}
+
+
+section > img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2px;
+    width: 50%;
+    height: 50%;
+    border-style: solid;
+    border-color: var(--palette-old-page);
+    border-width: 0.3rem;
 }

@@ -21,3 +21,19 @@ form button {
     width: 30%;
     font-size: 2.5rem;
 }
+
+
+table {
+    margin: 5rem auto;
+    margin-top: 15rem;   
+    width: 26.5%;
+    transform: scale(1.5);
+}
+
+table thead {
+    font-size: x-large;
+}
+
+table tbody {
+    font-size: medium;
+}

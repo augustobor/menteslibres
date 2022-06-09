@@ -84,3 +84,37 @@ form button:hover {
     text-align: center;
     margin: 2rem auto;
 }
+
+
+table {
+    margin: 2rem auto;   
+    display: block;
+    scroll-behavior: auto;
+    border-style: solid;
+    overflow-x: auto;
+    width: 67%;
+    border-color: var(--palette-old-page);
+}
+
+table thead {
+    background-color: var(--palette-old-page);
+    font-size: medium;
+}
+
+table thead th {
+    padding: 1%;
+}
+
+table tbody {
+    white-space: nowrap;
+    font-size: small;
+    background-color: var(--palette-good-page);
+    text-align: center;
+}
+
+
+table tbody a:hover {
+    background-color: var(--palette-old-page);
+    transition: all 100ms ease;
+    cursor: pointer;
+}

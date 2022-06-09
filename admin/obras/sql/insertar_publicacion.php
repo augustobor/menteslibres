@@ -46,5 +46,5 @@
     
     }
 
-    header("Location: ../agregar_modificar_obra.php");
+    header("Location: ../agregar_obra.php");
 ?>

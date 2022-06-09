@@ -5,6 +5,16 @@
 }
 
 
+header {
+    background-color: var(--palette-old-page);
+    height: 15vh;
+}
+
+header > img {
+    display: none;
+}
+
+
 h1 {
     font-size: 10rem;
     margin-top: 10rem;

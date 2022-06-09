@@ -36,9 +36,6 @@ h4 {
     font-size: 2rem;
 }
 
-img {
-    transform: scale(1.8);
-}
 
 .autor-arrow > div > .menu-arrow, .categoria-arrow > div > .menu-arrow {
     transform: rotate(90deg) scale(1.8);

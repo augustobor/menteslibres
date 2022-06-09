@@ -12,3 +12,13 @@ form button {
     width: 30%;
     font-size: 2.5rem;
 }
+
+
+
+table thead {
+    font-size: x-large;
+}
+
+table tbody {
+    font-size: medium;
+}

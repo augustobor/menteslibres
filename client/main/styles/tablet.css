@@ -22,9 +22,16 @@ section {
 
 section article {
     width: 60%;
+    padding: 5%;
 }
 
 section article p {
     font-size: 1.8rem;
     margin-bottom: 2%;
+}
+
+section > img {
+    border-radius: 10px;
+    width: 30%;
+    height: 30%;
 }
