@@ -1,4 +1,4 @@
-@import url('../../../client/styles/config.css');
+@import url('../../client/styles/config.css');
 
 body {
     height: auto;
@@ -28,6 +28,11 @@ h1 {
     margin: 3rem 0rem;
 }
 
+h2 {
+    font-size: large;
+    text-align: center;
+    margin: 1rem 0rem;
+}
 
 form {
     display: flex;
@@ -85,27 +90,22 @@ form button:hover {
     margin: 2rem auto;
 }
 
+/*
+    estilo de las tablas para mostrar obras
+*/
 
 table {
-    margin: 2rem auto;   
-    display: block;
-    scroll-behavior: auto;
-    border-style: solid;
-    overflow-x: auto;
-    width: 67%;
+    border: solid;
     border-color: var(--palette-old-page);
+    border-radius: 10px;
+    width: 100%;
 }
 
 table thead {
     background-color: var(--palette-old-page);
-    font-size: medium;
 }
 
-table thead th {
-    padding: 1%;
-}
-
-table tbody {
+table tbody tr {
     white-space: nowrap;
     font-size: small;
     background-color: var(--palette-good-page);
@@ -113,8 +113,9 @@ table tbody {
 }
 
 
-table tbody a:hover {
+table tbody tr:hover {
     background-color: var(--palette-old-page);
     transition: all 100ms ease;
     cursor: pointer;
 }
+

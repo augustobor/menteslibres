@@ -3,8 +3,8 @@
 
     if($conexion) {
 
-        $sql = 'SELECT titulo, categoria, nombre
-        FROM contenido INNER JOIN autor ON autor_id = autor.id';
+        $sql = 'SELECT id, titulo, fecha
+        FROM noticia';
 
         $resultado = pg_query($conexion, $sql);
 
@@ -13,7 +13,6 @@
             echo "<td>$row[0]</td>";
             echo "<td>$row[1]</td>";
             echo "<td>$row[2]</td>";
-            echo "<td><a>Eliminar</a></td>";
             echo "</tr>";
         }
         

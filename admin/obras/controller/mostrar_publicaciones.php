@@ -3,7 +3,7 @@
 
     if($conexion) {
 
-        $sql = 'SELECT titulo, categoria, nombre
+        $sql = 'SELECT contenido.id, titulo, categoria, nombre
         FROM contenido INNER JOIN autor ON autor_id = autor.id';
 
         $resultado = pg_query($conexion, $sql);
@@ -13,7 +13,7 @@
             echo "<td>$row[0]</td>";
             echo "<td>$row[1]</td>";
             echo "<td>$row[2]</td>";
-            echo "<td><a>Modificar</a>a/td>";
+            echo "<td>$row[3]</td>";
             echo "</tr>";
         }
         
