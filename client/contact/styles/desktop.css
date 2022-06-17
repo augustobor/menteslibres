@@ -1,7 +1,11 @@
-@import url('../../styles/menu-desktop.css');
+@import url('../../../styles/menu-desktop.css');
 
 .menu-mobile {
     display: none;
+}
+
+section {
+    padding: 3%;
 }
 
 section p {
@@ -19,4 +23,18 @@ section input, section textarea {
 section form button {
     width: 30%;
     font-size: 2.5rem;
+}
+
+.cafe {
+    margin: 2%;
+}
+
+.cafe > img {
+    margin-right: 6rem;
+    width: 20%;
+    height: 20%;
+}
+
+.cafe > p {
+    font-size: 3rem;
 }

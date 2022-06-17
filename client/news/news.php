@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300;400&display=swap" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
-
+    <?php
+        include('../../meta_tags.php');
+    ?>
 
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 680px)">
@@ -25,38 +19,36 @@
     </header>
 
     <menu class="menu-mobile">
-        <img id="menuIcon" src="../../imgs/burger-menu.svg" alt="hamburger-icon"/>
+        <img id="menuIcon" src="../../assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
-            <li><a href="../main/index.html">Inicio</a></li>
-            <li><a href="../about/about.html">Quiénes somos</a></li>
+            <li><a href="../main/index.php">Inicio</a></li>
+            <li><a href="../about/about.php">Quiénes somos</a></li>
             <li><a href="../obras/obras.php">Obras</a></li>
             <li><a href="#">Noticias</a></li>
-            <li><a href="../contact/contact.html">Contacto</a></li>
+            <li><a href="../contact/contact.php">Contacto</a></li>
         </ul>
     </menu>
 
     <menu class="menu-desktop">
         <ul>
-            <li><a href="../main/index.html">Inicio</a></li>
-            <li><a href="../about/about.html">Quiénes somos</a></li>
+            <li><a href="../main/index.php">Inicio</a></li>
+            <li><a href="../about/about.php">Quiénes somos</a></li>
             <li><a href="../obras/obras.php">Obras</a></li>
             <li><a href="#">Noticias</a></li>
-            <li><a href="../contact/contact.html">Contacto</a></li>
+            <li><a href="../contact/contact.php">Contacto</a></li>
         </ul>
     </menu>
 
     <h1>Noticias</h1>
     
     <section>
-        
-    
 
         <?php
-            include('./news_pgsql.php');
+            include('./controller/news_pgsql.php');
         ?>
         
     </section>
 
-    <script src="../../menu.js"></script>
+    <script src="../menu.js"></script>
     <script src='./lista.js'></script>
 </body>

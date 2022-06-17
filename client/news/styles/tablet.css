@@ -24,19 +24,15 @@ section {
     padding: 2%;
 }
 
+section article {
+    margin-top: 5rem;
+}
+
 section article h2 {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 section article h3 {
-    font-size: 3rem;
-    margin-bottom: 2rem;
-}
-
-section article div {
-    margin-bottom: 1rem;
-}
-
-section article div p {
     font-size: 2rem;
+    margin-bottom: 2rem;
 }

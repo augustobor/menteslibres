@@ -1,4 +1,5 @@
-@import url('../../../client/styles/config.css');
+@import url('../../../styles/config.css');
+
 html {
     height: auto;
 }
@@ -33,6 +34,7 @@ section a {
     font-size: 1.5rem;
     font-weight: bold;
     font-family: 'Rasa', serif;
+    border-radius: 5px;
     cursor: pointer;
     transition: all 200ms ease;
     font-size: 1.5rem;

@@ -1,5 +1,6 @@
 <?php
     include("../../../conection.php");
+    session_start();
 
     if($conexion) {
 
@@ -29,7 +30,7 @@
         if($resultado) {
 
             $sentencia = "COMMIT;";
-            $_SESSION['mensaje'] = "Publicación agregada correctamente";
+            $_SESSION['mensaje'] = "Publicación agregada correctamente. Complete los campos para agregar otra obra.";
 
         } else {
 

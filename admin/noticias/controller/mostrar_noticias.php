@@ -8,15 +8,14 @@
 
         $resultado = pg_query($conexion, $sql);
 
-        while($row = pg_fetch_row($resultado)) {
+        while($record = pg_fetch_array($resultado)) {
             echo "<tr>";
-            echo "<td>$row[0]</td>";
-            echo "<td>$row[1]</td>";
-            echo "<td>$row[2]</td>";
+            echo "<td>$record[id]</td>";
+            echo "<td>$record[titulo]</td>";
+            echo "<td>$record[fecha]</td>";
             echo "</tr>";
         }
         
-
     } else {
         die("La conexión falló");
     }

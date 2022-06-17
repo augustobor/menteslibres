@@ -1,5 +1,5 @@
-@import url('../../styles/config.css');
-@import url('../../styles/menu-cel.css');
+@import url('../../../styles/config.css');
+@import url('../../../styles/menu-cel.css');
 
 body {
     height: auto;
@@ -44,14 +44,19 @@ section h3 {
     font-size: 2rem;
 }
 
-section article .noticia {
+section {
+    justify-content: center;
+}
+
+section article.noticia {
+    margin: 5% 2%;
+    width: 100%;
+    margin-right: 2rem;
     width: auto;
     padding: 4%;
     text-align: left;
     border-style: solid;
     border-color: var(--palette-red);
-    margin-bottom: 5rem;
-    margin-top: 1rem;
     transition: all 200ms ease;
 }
 

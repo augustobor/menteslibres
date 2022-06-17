@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "vuex": "^4.0.2"
+    "tinymce": "^6.0.3"
   }
 }

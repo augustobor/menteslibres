@@ -9,9 +9,9 @@
     <?php
         include('../../meta_tags.php');
     ?>
-    <link rel="stylesheet" type="text/css" href="../style_obras_noticias/style.css">
-    <link rel="stylesheet" type="text/css" href="../style_obras_noticias/tablet.css" media="screen and (min-width: 680px)">
-    <link rel="stylesheet" type="text/css" href="../style_obras_noticias/desktop.css" media="screen and (min-width: 800px)"> 
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/tablet.css" media="screen and (min-width: 680px)">
+    <link rel="stylesheet" type="text/css" href="../styles/desktop.css" media="screen and (min-width: 800px)"> 
     <title>Admin | publicación</title>
 </head>
 <body>
@@ -41,5 +41,16 @@
             ?>
         </tbody>
     </table>
-    <script src="./controller/llevar_datos.js"></script>
+    <script>
+        const listElements = document.querySelectorAll('tr');
+
+        listElements.forEach(listElement => {
+
+            listElement.addEventListener('click', () => {
+                
+                window.location = "./modificar_obra_edicion.php?titulo=" + listElement.querySelector('td').textContent;
+                
+            })
+        })
+    </script>
 </body>

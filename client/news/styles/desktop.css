@@ -1,4 +1,4 @@
-@import url('../../styles/menu-desktop.css');
+@import url('../../../styles/menu-desktop.css');
 
 .menu-mobile {
     display: none;
@@ -15,15 +15,11 @@ section {
     padding: 2%;
 }
 
+section article {
+    margin: 0 25%;
+}
+
 section article h3 {
     font-size: 3rem;
     margin-bottom: 2rem;
-}
-
-section article div {
-    margin-bottom: 1rem;
-}
-
-section article div p {
-    font-size: 2rem;
 }

@@ -1,0 +1,121 @@
+@import url('../../styles/config.css');
+
+body {
+    height: auto;
+    font-family: 'Rasa', serif;
+}
+
+a > img {
+    position:fixed;
+    width: 15%;
+    height: auto;
+	top: 0;
+	left: 0;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    transition: all 200ms ease;
+}
+
+a > img:active {
+    background-color: var(--palette-old-page);
+    transition: all 200ms ease;
+}
+
+h1 {
+    font-size: x-large;
+    text-align: center;
+    margin: 3rem 0rem;
+}
+
+h2 {
+    font-size: large;
+    text-align: center;
+    margin: 1rem 0rem;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+input, textarea, select, form > div {
+    margin: 3% 10%;
+	padding: 2%;
+    width: 100%;
+	border-style: solid;
+	border-color: var(--palette-old-page);
+	border-width: 0.5rem;
+	background-color: transparent;
+	font-size: 1.5rem;
+	color: var(--just-black);
+}
+
+option {
+    background-color: var(--palette-good-page);
+}
+
+form button {
+    padding: 5%;
+    width: 50%;
+    margin: 5% 2%;
+    background-color: var(--palette-old-page);
+    border-style: none;
+    color: var(--just-black);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Rasa', serif;
+    cursor: pointer;
+    transition: all 200ms ease;
+    font-size: 1.5rem;
+}
+
+form button:hover {
+    background-color: var(--just-black);
+    color: var(--just-white);
+    transition: all 200ms ease;
+}
+
+.mensaje {
+    width: 20%;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: var(--palette-good-page);
+    color: var(--just-black);
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/*
+    estilo de las tablas para mostrar obras
+*/
+
+table {
+    border: solid;
+    border-color: var(--palette-old-page);
+    border-radius: 10px;
+    width: 100%;
+}
+
+table thead {
+    background-color: var(--palette-old-page);
+}
+
+table tbody tr {
+    white-space: nowrap;
+    font-size: small;
+    background-color: var(--palette-good-page);
+    text-align: center;
+}
+
+
+table tbody tr:hover {
+    background-color: var(--palette-old-page);
+    transition: all 100ms ease;
+    cursor: pointer;
+}
+

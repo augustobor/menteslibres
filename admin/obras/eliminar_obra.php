@@ -9,9 +9,9 @@
         include('../../meta_tags.php');
     ?>
 
-    <link rel="stylesheet" type="text/css" href="../style_obras_noticias/style.css">
-    <link rel="stylesheet" type="text/css" href="../style_obras_noticias/tablet.css" media="screen and (min-width: 680px)">
-    <link rel="stylesheet" type="text/css" href="../style_obras_noticias/desktop.css" media="screen and (min-width: 800px)"> 
+    <link rel="stylesheet" type="text/css" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/tablet.css" media="screen and (min-width: 680px)">
+    <link rel="stylesheet" type="text/css" href="../styles/desktop.css" media="screen and (min-width: 800px)"> 
 
     <title>Admin | publicación</title>
 </head>
@@ -42,5 +42,18 @@
             ?>
         </tbody>
     </table>
-    <script src="./controller/llevar_datos_eliminar.js"></script>
+    <script>
+        const listElements = document.querySelectorAll('tr');
+
+        listElements.forEach(listElement => {
+
+            listElement.addEventListener('click', () => {
+                
+                if(confirm('¿Está seguro de eliminar la obra N°' + listElement.querySelector('td').textContent + '?'))
+                {
+                    window.location = "./sql/eliminar_obra_edicion.php?titulo=" + listElement.querySelector('td').textContent;
+                }    
+            })
+        })
+    </script>
 </body>

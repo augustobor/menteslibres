@@ -1,5 +1,5 @@
-@import url('../../styles/config.css');
-@import url('../../styles/menu-cel.css');
+@import url('../../../styles/config.css');
+@import url('../../../styles/menu-cel.css');
 
 body {
     height: auto;
@@ -32,7 +32,7 @@ section p {
     font-weight: bold;
     font-family: 'Rasa', serif;
     color: var(--just-black);
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 
 section form {
@@ -73,5 +73,37 @@ section form button {
 section form button:hover {
     background-color: var(--just-black);
     color: var(--just-white);
+    transition: all 200ms ease;
+}
+
+
+.cafe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 5%;
+    transition: all 200ms ease;
+}
+
+.cafe > img {
+    width: 20%;
+    height: 20%;
+    margin-right: 2rem;
+}
+
+.cafe > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Rasa', serif;
+    color: var(--just-black);
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.cafe:hover {
+    transform: scale(1.1);
     transition: all 200ms ease;
 }
