@@ -1,7 +1,12 @@
 <?php
-    error_reporting(0);
     session_start();
+    
+    if(!isset($_SESSION['admin'])) {
+        header("Location: ../login/index.php");
+    }
+
     $_SESSION['id_obra'] = $_REQUEST['titulo'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

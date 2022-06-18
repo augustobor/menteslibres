@@ -1,3 +1,9 @@
+<?php
+    session_start();
+    if(isset($_SESSION['admin'])) {
+        unset($_SESSION['admin']);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,15 +22,22 @@
     <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 680px)">
     <link rel="stylesheet" type="text/css" href="./styles/desktop.css" media="screen and (min-width: 1000px)">    
     
-    <title>Inicio | admin</title>
+    <title>Inicio | login</title>
 </head>
 <body>
-    <h1>Bienvenido a la vista del administrador</h1>
-    <section>
-        <a href="../obras/agregar_obra.php">Agregar publicación</a>
-        <a href="../obras/modificar_obra.php">Modificar publicación</a>
-        <a href="../obras/eliminar_obra.php">Eliminar publicación</a>
-        <a href="../noticias/agregar_noticia.php">Agregar noticia</a>
-        <a href="../noticias/eliminar_noticia.php">Eliminar noticia</a>
-    </section>
+
+    <h1>Inicia sesión</h1>
+
+    <form action="./sql/iniciar_sesion_pgpsql.php" class="login" method="POST">
+        <input class="login_input" type="text" name="user" placeholder="Usuario">
+        <hr/>
+        <input class="login_input" type="password" name="password" placeholder="Contraseña">
+        <hr/>
+        <input class="login_submit" type="submit" value="Iniciar sesión"/>
+    </form>
+
+    <?php
+        include('../mensaje.php');
+    ?>
+  
 </body>

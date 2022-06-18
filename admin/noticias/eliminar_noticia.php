@@ -1,6 +1,10 @@
 <?php
     session_start();
-    error_reporting(0);
+
+    if(!isset($_SESSION['admin'])) {
+        header("Location: ../login/index.php");
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +23,7 @@
 </head>
 <body>
 
-    <a href="../main/index.html" class="btn-home">
+    <a href="../main/index.php" class="btn-home">
         <img src="../../assets/arrow-left.svg" alt='botón'>
     </a>
 
