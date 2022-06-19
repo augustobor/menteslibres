@@ -58,7 +58,7 @@
         <a id="mail-button" href="mailto:menteslibres.pabellonliterario@gmail.com"></a>
     </section>
 
-    <section>
+    <section class="cafecito">
 
         <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -67,7 +67,7 @@
             nobis sunt id sint impedit hic accusamus.
         </p>
         <a href="https://cafecito.app/sebaiako" class="cafe">
-            <img src="./imgs/cafecito-logo.png" alt=""/>
+            <img src="./imgs/coffe.svg" alt="cafecito"/>
             <p>Lorem</p>
         </a>
     </section>

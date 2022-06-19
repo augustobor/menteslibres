@@ -89,8 +89,7 @@ section form button:hover {
 }
 
 .cafe > img {
-    width: 20%;
-    height: 20%;
+    transform: scale(1.4);
     margin-right: 2rem;
 }
 
@@ -100,7 +99,6 @@ section form button:hover {
     font-family: 'Rasa', serif;
     color: var(--just-black);
     margin: 0;
-    margin-bottom: 1rem;
 }
 
 .cafe:hover {

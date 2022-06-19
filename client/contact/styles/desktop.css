@@ -31,10 +31,13 @@ section form button {
 
 .cafe > img {
     margin-right: 6rem;
-    width: 20%;
-    height: 20%;
+    transform: scale(4);
 }
 
 .cafe > p {
     font-size: 3rem;
+}
+
+.cafecito {
+    padding: 1%;
 }

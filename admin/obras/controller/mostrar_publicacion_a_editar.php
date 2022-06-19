@@ -31,7 +31,7 @@
 
             echo "</select>";
             echo "<input name='autor' type='text' placeholder='Autor' value='$row[2]' required/>";
-            echo "<textarea name='contenido' rows=10 cols='50' placeholder='Obra' required>$row[3]</textarea>";
+            echo "<textarea name='contenido' type='text' id='RichText' name='noticia' required>$row[3]</textarea>";
         
         }
         

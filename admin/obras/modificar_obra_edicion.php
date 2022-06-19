@@ -20,6 +20,13 @@
     <link rel="stylesheet" type="text/css" href="../styles/tablet.css" media="screen and (min-width: 680px)">
     <link rel="stylesheet" type="text/css" href="../styles/desktop.css" media="screen and (min-width: 800px)"> 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rek="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="../richtext/richtext.min.css">
+    <script src="https://kit.fontawesome.com/5dbe99bbbf.js" crossorigin="anonymous"></script>
+    <script src= "../richtext/jquery.richtext.js"></script>
+
     <title>Admin | modificar</title>
 </head>
 <body>
@@ -33,6 +40,12 @@
         <?php
             include('./controller/mostrar_publicacion_a_editar.php');
         ?>
+        
+        <script>
+            $(document).ready(function() {
+                $("#RichText").richText();
+            });
+        </script>
         <button id="submit-button" type="submit" form="form">Actualizar</button>
     </form>
 

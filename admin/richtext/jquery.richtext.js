@@ -205,25 +205,25 @@
                 html: '<span class="fa fa-underline"></span>'
             }), // underline
             $btnJustify = $('<a />', {
-                class: "richText-btn",
+                class: "richText-btn-align",
                 "data-command": "justifyFull",
                 "title": settings.translations.justify,
                 html: '<span class="fa fa-align-justify"></span>'
             }), // left align
             $btnLeftAlign = $('<a />', {
-                class: "richText-btn",
+                class: "richText-btn-align",
                 "data-command": "justifyLeft",
                 "title": settings.translations.alignLeft,
                 html: '<span class="fa fa-align-left"></span>'
             }), // left align
             $btnCenterAlign = $('<a />', {
-                class: "richText-btn",
+                class: "richText-btn-align",
                 "data-command": "justifyCenter",
                 "title": settings.translations.alignCenter,
                 html: '<span class="fa fa-align-center"></span>'
             }), // centered
             $btnRightAlign = $('<a />', {
-                class: "richText-btn",
+                class: "richText-btn-align",
                 "data-command": "justifyRight",
                 "title": settings.translations.alignRight,
                 html: '<span class="fa fa-align-right"></span>'
