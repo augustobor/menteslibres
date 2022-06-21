@@ -1,5 +1,6 @@
 @import url('../../../styles/config.css');
 @import url('../../../styles/menu-cel.css');
+@import url('../../../node_modules/bulma/bulma.sass');
 
 body {
     height: auto;

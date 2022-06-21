@@ -41,7 +41,7 @@
 
     <h1>Noticias</h1>
     
-    <section>
+    <section class='media'>
 
         <?php
             include('./controller/news_pgsql.php');

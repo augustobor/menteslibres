@@ -41,7 +41,7 @@
 
     <h1>Obras</h1>
 
-    <section>
+    <section class='box'>
         <ul> 
             <h2>Autores</h2>
             <?php
