@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <img src="./imgs/obras.png" alt="libros"/>
+        <img src="./imgs/obras.webp" alt="libros"/>
     </header>
 
     <menu class="menu-mobile">

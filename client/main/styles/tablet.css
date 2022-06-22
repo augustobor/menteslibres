@@ -35,3 +35,25 @@ section > img {
     width: 30%;
     height: 30%;
 }
+
+
+
+footer p {
+    font-size: x-large;
+    margin-bottom: 4rem;
+}
+
+footer a {
+    margin: 0 10%;
+}
+
+footer img {
+    transform: scale(2);
+    transform: all 200ms ease;
+    margin-bottom: 5rem;
+}
+
+footer img:hover {
+    transform: scale(2.4);
+    transition: all 200ms ease;
+}

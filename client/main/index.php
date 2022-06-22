@@ -15,7 +15,7 @@
 <body>
 
     <header>
-        <img src="./imgs/cabecera_inicio.png" alt="pabellón literario"/>
+        <img src="./imgs/cabecera_inicio.webp" alt="pabellón literario"/>
     </header>
 
     <menu class="menu-mobile">
@@ -43,27 +43,35 @@
     <section>
         <article>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Nostrum delectus tempora debitis optio ipsam ex porro necessitatibus voluptas, 
-                facilis officia voluptatibus, sint voluptate sunt neque architecto blanditiis 
-                vitae, ea velit.
+                Estás en Mentes Libres: un espacio de Literatura, Poesía y Filosofía. 
+                Acá encontrarás nuestros escritos realizados en el Pabellón Literario 
+                ¡Siéntete libre de navegar por el maravilloso mundo de las palabras!
             </p>
             <hr/>
         </article>
-        <img src="./imgs/inicio_1.png" alt="foto de entrega de obras"/>
+        <img src="./imgs/inicio_1.webp" alt="foto de entrega de obras"/>
     </section>
 
     <section>
-        <img src="./imgs/inicio_2.png" alt="foto presentando obra"/>
+        <img src="./imgs/inicio_2.webp" alt="foto presentando obra"/>
         <article>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Nostrum delectus tempora debitis optio ipsam ex porro necessitatibus voluptas, 
-                facilis officia voluptatibus, sint voluptate sunt neque architecto blanditiis 
-                vitae, ea velit.
+            Todo esto es posible gracias a la dedicación de cada escritor de Mentes Libres. 
+            Y también gracias a quienes promueve la educación dentro de los pabellones.
             </p>
             <hr/>
         </article>
     </section>
+    <footer>
+        <p>website made by Augusto Borromeo</p>
+        <div>
+            <a target="_blank" class="github" href="https://github.com/augustobor" rel="noreferrer">
+                <img src="./imgs/bxl-github.svg" alt="imagen de github">
+            </a>
+            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/augusto-borromeo-b75255218/" rel="noreferrer">
+                <img src="./imgs/bxl-linkedin-square.svg" alt="foto de linkedin">
+            </a>
+        </div>
+    </footer>
     <script src="../menu.js"></script>
 </body>

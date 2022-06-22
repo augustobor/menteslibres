@@ -42,10 +42,8 @@
 
     <section>
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Sapiente eaque molestias ducimus, rerum consectetur nisi consequuntur. 
-            Soluta corporis laudantium facilis totam, tenetur fugiat, 
-            nobis sunt id sint impedit hic accusamus.
+            ¿Qué te parecen nuestras obras literarias? No dudes en enviarnos tus comentarios. 
+            Si hay algún autor que quieras recomendarnos para leer, sería genial.
         </p>
 
         <form action="" id="form">
@@ -61,10 +59,8 @@
     <section class="cafecito">
 
         <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-            Sapiente eaque molestias ducimus, rerum consectetur nisi consequuntur. 
-            Soluta corporis laudantium facilis totam, tenetur fugiat, 
-            nobis sunt id sint impedit hic accusamus.
+            En el enlace del Cafecito pueden ayudarnos en la producción de ejemplares para 
+            donarlos a escuelas, bibliotecas y otros Pabellones Literarios.
         </p>
         <a href="https://cafecito.app/sebaiako" class="cafe">
             <img src="./imgs/coffe.svg" alt="cafecito"/>
@@ -72,4 +68,5 @@
         </a>
     </section>
     <script src="../menu.js"></script>
+    <script src="./mail.js"></script>
 </body>

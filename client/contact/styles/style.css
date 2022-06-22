@@ -27,9 +27,8 @@ section {
 }
 
 section p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0 10%;
-    font-weight: bold;
     font-family: 'Rasa', serif;
     color: var(--just-black);
     margin-bottom: 3rem;
