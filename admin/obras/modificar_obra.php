@@ -29,6 +29,10 @@
 
     <h1>Modificar publicación</h1>
     <h2>Seleccione la fila que desea modificar</h2>
+    <form class="filter" action="./controller/filter/filtrar.php" method="POST">
+        <input class="filter-value" name="argument" type="text" placeholder="Ingrese su texto aquí"/>
+        <input class="filter-submit" type="submit" value="Buscar"/>
+    </form>
     <table>
         <thead>
             <tr>
@@ -40,7 +44,24 @@
         </thead>
         <tbody>
             <?php
-                include('./controller/mostrar_publicaciones.php');
+
+                echo "$argv";
+
+                if(isset($_SESSION['filtrado'])) {
+
+                    while($row = pg_fetch_row($_SESSION['filtrado'])) {
+                        echo "<tr>";
+                        echo "<td>$row[0]</td>";
+                        echo "<td>$row[1]</td>";
+                        echo "<td>$row[2]</td>";
+                        echo "<td>$row[3]</td>";
+                        echo "</tr>";
+                    }
+
+                    unset($_SESSION['filtrado']);
+                } else {
+                    include('./controller/mostrar_publicaciones.php');
+                }
             ?>
         </tbody>
     </table>

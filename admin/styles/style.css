@@ -90,6 +90,45 @@ form button:hover {
     margin: 2rem auto;
 }
 
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.filter > input {
+    margin: 2%;
+}
+
+input.filter-value {
+    width: 60%;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+input.filter-submit {
+    width: 30%;
+    border-style: none;
+    background-color: var(--palette-old-page);
+    border-radius: 3px;
+    color: var(--just-white);
+    font-weight: bold;
+    transition: all 200ms ease;
+}
+
+input.filter-submit:hover {
+    background-color: var(--palette-good-page);
+    color: var(--just-black);
+    transition: all 200ms ease;
+}
+
+input.filter-submit:active {
+    background-color: var(--just-black);
+    color: var(--just-white);
+}
+
 /*
     estilo de las tablas para mostrar obras
 */
@@ -118,4 +157,5 @@ table tbody tr:hover {
     transition: all 100ms ease;
     cursor: pointer;
 }
+
 

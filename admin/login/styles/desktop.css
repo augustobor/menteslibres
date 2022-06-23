@@ -4,7 +4,7 @@ h1 {
 }
 
 form {
-    margin: 0 50rem; 
+    margin: 0 25rem; 
 }
 
 .login_input {
@@ -16,7 +16,7 @@ hr {
 }
 
 .login_submit {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 .mensaje {
