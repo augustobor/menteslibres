@@ -16,6 +16,7 @@ h2 {
 
 form {
     margin: 0 30%;
+    margin-top: 10rem;
 }
 
 input, textarea, select, form > div {
@@ -28,7 +29,7 @@ form button {
 }
 
 table {
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 thead th {

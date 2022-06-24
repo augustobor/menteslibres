@@ -1,6 +1,7 @@
 <?php
     session_start();
     
+    include("../../conection.php");
     if(!isset($_SESSION['admin'])) {
         header("Location: ../login/index.php");
     }
@@ -30,6 +31,16 @@
 
     <h1>Eliminar publicación</h1>
     <h2>Seleccione la fila que desea eliminar</h2>
+
+    <form class="filter" action="" method="get">
+        <input class="filter-value" name="argument" type="text" placeholder="Ingrese su texto aquí"/>
+        <select class="filter-value" name="feature" required>
+            <option>titulo</option>
+            <option>nombre</option>
+        </select>
+        <input class="filter-submit" type="submit" value="Buscar"/>
+    </form>
+
     <table>
         <thead>
             <tr>
@@ -40,9 +51,34 @@
             </tr>
         </thead>
         <tbody>
-            <?php
-                include('./controller/mostrar_publicaciones.php');
-            ?>
+                <?php
+
+                    if($conexion) {
+
+                        if(isset($_GET['argument'])) {
+
+                            $sql = "SELECT contenido.id, titulo, categoria, nombre
+                            FROM contenido INNER JOIN autor ON autor_id = autor.id
+                            WHERE $_GET[feature] LIKE '%$_GET[argument]%';";
+
+                            $resultado = pg_query($conexion, $sql);
+
+                            while($row = pg_fetch_row($resultado)) {
+                                echo "<tr>";
+                                echo "<td>$row[0]</td>";
+                                echo "<td>$row[1]</td>";
+                                echo "<td>$row[2]</td>";
+                                echo "<td>$row[3]</td>";
+                                echo "</tr>";
+                            }
+
+                            unset($_GET['argument']);
+
+                        } else {
+                            include('./controller/mostrar_publicaciones.php');
+                        }
+                    }
+                ?>
         </tbody>
     </table>
     <script>

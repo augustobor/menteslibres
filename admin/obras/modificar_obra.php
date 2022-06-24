@@ -1,10 +1,12 @@
 <?php
     session_start();
     
+    include("../../conection.php");
     if(!isset($_SESSION['admin'])) {
         header("Location: ../login/index.php");
     }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +14,7 @@
     <?php
         include('../../meta_tags.php');
     ?>
+    
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../styles/tablet.css" media="screen and (min-width: 680px)">
     <link rel="stylesheet" type="text/css" href="../styles/desktop.css" media="screen and (min-width: 800px)"> 
@@ -29,8 +32,12 @@
 
     <h1>Modificar publicación</h1>
     <h2>Seleccione la fila que desea modificar</h2>
-    <form class="filter" action="./controller/filter/filtrar.php" method="POST">
+    <form class="filter" action="" method="get">
         <input class="filter-value" name="argument" type="text" placeholder="Ingrese su texto aquí"/>
+        <select class="filter-value" name="feature" required>
+            <option>titulo</option>
+            <option>nombre</option>
+        </select>
         <input class="filter-submit" type="submit" value="Buscar"/>
     </form>
     <table>
@@ -45,22 +52,30 @@
         <tbody>
             <?php
 
-                echo "$argv";
+                if($conexion) {
 
-                if(isset($_SESSION['filtrado'])) {
+                    if(isset($_GET['argument'])) {
 
-                    while($row = pg_fetch_row($_SESSION['filtrado'])) {
-                        echo "<tr>";
-                        echo "<td>$row[0]</td>";
-                        echo "<td>$row[1]</td>";
-                        echo "<td>$row[2]</td>";
-                        echo "<td>$row[3]</td>";
-                        echo "</tr>";
+                        $sql = "SELECT contenido.id, titulo, categoria, nombre
+                        FROM contenido INNER JOIN autor ON autor_id = autor.id
+                        WHERE $_GET[feature] LIKE '%$_GET[argument]%';";
+
+                        $resultado = pg_query($conexion, $sql);
+
+                        while($row = pg_fetch_row($resultado)) {
+                            echo "<tr>";
+                            echo "<td>$row[0]</td>";
+                            echo "<td>$row[1]</td>";
+                            echo "<td>$row[2]</td>";
+                            echo "<td>$row[3]</td>";
+                            echo "</tr>";
+                        }
+
+                        unset($_GET['argument']);
+
+                    } else {
+                        include('./controller/mostrar_publicaciones.php');
                     }
-
-                    unset($_SESSION['filtrado']);
-                } else {
-                    include('./controller/mostrar_publicaciones.php');
                 }
             ?>
         </tbody>
