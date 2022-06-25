@@ -1,5 +1,5 @@
 <?php
-    include("../../conection.php");
+    require("../../conection.php");
 
     if($conexion) {
 

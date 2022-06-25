@@ -77,6 +77,14 @@ h4 {
     list-style: none;
 }
 
+.first {
+    background-color: var(--just-white);
+}
+
+.first:hover {
+    background-color: #e0dbdb;
+}
+
 ul > .autor:hover {
     background-color: #f1e0d4;
 }
