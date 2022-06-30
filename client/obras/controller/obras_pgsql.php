@@ -4,10 +4,12 @@
     
     if($conexion) {
 
-        $sql ="SELECT nombre, titulo, categoria
+        $ID_MENTES = "53";
+
+        $sql ="SELECT nombre, titulo, contenido.id
         FROM contenido  
             INNER JOIN autor ON contenido.autor_id = autor.id 
-        WHERE titulo='¿Qué es mentes libres?'
+        WHERE contenido.id='$ID_MENTES'
         ORDER BY nombre, categoria;";
 
         $resultado = pg_query($conexion, $sql);
@@ -22,7 +24,7 @@
         echo "<ul>";
         echo "<li class='categoria'>";
         echo "<div>";
-        echo "<h4>".$row[2]."</h4>";
+        echo "<h4>Descripción</h4>";
         echo "<img class='menu-arrow' src=../../assets/arrow.svg alt=''/>";
         echo "</div>";
         echo "<ul>";
@@ -34,10 +36,10 @@
         echo "</ul>";
         echo "</li>";
 
-        $sql = "SELECT nombre, titulo, categoria
+        $sql = "SELECT nombre, titulo, categoria, contenido.id
         FROM contenido  
             INNER JOIN autor ON contenido.autor_id = autor.id 
-        WHERE titulo NOT IN ('¿Qué es mentes libres?')
+        WHERE contenido.id NOT IN ('$ID_MENTES')
         ORDER BY nombre, categoria;";
 
         $resultado = pg_query($conexion, $sql);

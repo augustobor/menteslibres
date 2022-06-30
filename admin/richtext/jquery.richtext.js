@@ -241,7 +241,7 @@
                 html: '<span class="fa fa-list"></span>'
             }), // unordered list
             $btnHeading = $('<a />', {
-                class: "richText-btn",
+                class: "richText-btn-heading",
                 "title": settings.translations.addHeading,
                 html: '<span class="fa fa-header fa-heading"></span>'
             }), // title/header
@@ -346,7 +346,7 @@
         var fontSizes = [24, 18, 16, 14, 12];
         var $fontSizes = $dropdownList.clone();
         for (var i = 0; i < fontSizes.length; i++) {
-            $fontSizes.append($('<li />', {html: '<a style="font-size:' + fontSizes[i] + 'px;" data-command="fontSize" data-option="' + fontSizes[i] + '">' + settings.translations.text + ' ' + fontSizes[i] + 'px</a>'}));
+            $fontSizes.append($('<li />', {html: '<a style=data-command="fontSize" data-option="' + fontSizes[i] + '">' + settings.translations.text + ' ' + fontSizes[i] + 'px</a>'}));
         }
         $btnFontSize.append($dropdownOuter.clone().append($fontSizes.prepend($dropdownClose.clone())));
 
@@ -740,7 +740,7 @@
                     class: 'richText-help-popup',
                     style: 'position:absolute;top:0;right:0;bottom:0;left:0;background-color: rgba(0,0,0,0.3);'
                 });
-                var $inner = $('<div />', {style: 'position:relative;margin:60px auto;padding:20px;background-color:#FAFAFA;width:70%;font-family:Calibri,Verdana,Helvetica,sans-serif;font-size:small;'});
+                var $inner = $('<div />', {style: 'position:relative;margin:60px auto;padding:20px;background-color:#FAFAFA;width:70%;font-family:Calibri,Verdana,Helvetica,sans-serif;'});
                 var $content = $('<div />', {html: '<span id="closeHelp" style="display:block;position:absolute;top:0;right:0;padding:10px;cursor:pointer;" title="' + settings.translations.close + '"><span class="fa fa-times"></span></span>'});
                 $content.append('<h3 style="margin:0;">RichText</h3>');
                 $content.append('<hr><br>Powered by <a href="https://github.com/webfashionist/RichText" target="_blank">webfashionist/RichText</a> (Github) <br>License: <a href="https://github.com/webfashionist/RichText/blob/master/LICENSE" target="_blank">AGPL-3.0</a>');
@@ -1358,8 +1358,8 @@
             } else if (command === "fontSize" && parseInt(option) > 0) {
                 var selection = getSelectedText();
                 selection = (selection + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + '<br>' + '$2');
-                var html = (settings.useSingleQuotes ? "<span style='font-size:" + option + "px;'>" + selection + "</span>" : '<span style="font-size:' + option + 'px;">' + selection + '</span>');
-                pasteHTMLAtCaret(html);
+                // var html = (settings.useSingleQuotes ? "<span style='font-size:" + option + "px;'>" + selection + "</span>" : '<span style="font-size:' + option + 'px;">' + selection + '</span>');
+                // pasteHTMLAtCaret(html);
             } else {
                 document.execCommand(command, false, option);
             }

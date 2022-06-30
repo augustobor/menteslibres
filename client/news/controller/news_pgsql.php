@@ -3,7 +3,9 @@
 
     if($conexion) {
 
-        $sql = "SELECT titulo, fecha FROM noticia";
+        $sql = "SELECT titulo, fecha 
+        FROM noticia
+        ORDER BY fecha DESC";
 
         $resultado=pg_query($conexion, $sql);
         

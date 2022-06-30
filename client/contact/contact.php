@@ -5,6 +5,8 @@
     <?php
         include('../../meta_tags.php');
     ?>
+    
+    <link rel="shortcut icon" href="../../favicon.png">
 
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 680px)">

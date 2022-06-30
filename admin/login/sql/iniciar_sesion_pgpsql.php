@@ -5,8 +5,6 @@
 
     if($conexion) {
 
-    
-
         $sql = "SELECT nombre_usuario, password 
         FROM admin 
         WHERE nombre_usuario = '$_POST[user]' AND password = '$_POST[password]'";
@@ -18,6 +16,9 @@
         if($row_number == 1) {
 
             $_SESSION['admin'] = 1;
+            $_SESSION["ultimoAcceso"]= date("Y-n-j H:i:s");
+            $_SESSION['tiempo'] = 100;
+            
             header("Location: ../../main/index.php");
 
         } else {

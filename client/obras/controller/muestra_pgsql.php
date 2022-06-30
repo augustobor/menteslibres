@@ -1,9 +1,11 @@
 <?php
+
     require("../../conection.php");
 
     
     if($conexion) {
 
+      
         $sql = "SELECT titulo, contenido
         FROM contenido 
         WHERE titulo = '$_SESSION[titulo]';";
@@ -13,7 +15,7 @@
         if($resultado) {
             $record = pg_fetch_array($resultado);
             echo "<h1>$record[titulo]</h1>";
-            echo "<section onselectstart= 'return false'>$record[contenido]</section>";
+            echo "<section>$record[contenido]</section>";
         } 
 
     } 

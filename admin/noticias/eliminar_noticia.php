@@ -1,9 +1,28 @@
 <?php
     session_start();
 
+    error_reporting(0);
+
     include("../../conection.php");
     if(!isset($_SESSION['admin'])) {
         header("Location: ../login/index.php");
+    }else{
+        $_SESSION["ahora"] = date("Y-n-j H:i:s");
+        $_SESSION["tiempo_transcurrido"] = (strtotime($_SESSION["ahora"])-strtotime($_SESSION["ultimoAcceso"]));
+
+        if($_SESSION["tiempo_transcurrido"] >= $_SESSION['tiempo']) {
+
+             session_destroy(); 
+
+             $_SESSION["ultimoAcceso"] = 0;
+             $_SESSION["ahora"] = 0;
+             $_SESSION["tiempo_transcurrido"] = 0;
+
+             header("Location: ../login/index.php");
+
+           }else {
+            $_SESSION["ultimoAcceso"] = $_SESSION["ahora"];
+        }
     }
 
 ?>
@@ -15,6 +34,7 @@
         include('../../meta_tags.php');
     ?>
 
+    <link rel="shortcut icon" href="../../favicon.png">
 
     <link rel="stylesheet" type="text/css" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" href="../styles/tablet.css" media="screen and (min-width: 680px)">

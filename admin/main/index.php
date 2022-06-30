@@ -1,22 +1,34 @@
 <?php
     session_start();
+    error_reporting(0);
     if(!isset($_SESSION['admin'])) {
         header("Location: ../login/index.php");
+    }else{
+        $_SESSION["ahora"] = date("Y-n-j H:i:s");
+        $_SESSION["tiempo_transcurrido"] = (strtotime($_SESSION["ahora"])-strtotime($_SESSION["ultimoAcceso"]));
+
+        if($_SESSION["tiempo_transcurrido"] >= $_SESSION['tiempo']) {
+            //si pasaron 10 minutos o más
+             session_destroy(); // destruyo la sesión
+
+             $_SESSION["ultimoAcceso"] = 0;
+             $_SESSION["ahora"] = 0;
+             $_SESSION["tiempo_transcurrido"] = 0;
+
+             header("Location: ../login/index.php");
+             //sino, actualizo la fecha de la sesión
+           }else {
+            $_SESSION["ultimoAcceso"] = $_SESSION["ahora"];
+        }
     }
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300;400&display=swap" rel="stylesheet">
     
-    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
-
+    <?php
+        include("../../meta_tags.php");
+    ?>
 
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 680px)">

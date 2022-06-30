@@ -4,42 +4,56 @@
 
     if($conexion) {
 
-        $resultado_id = pg_query($conexion, "
-        SELECT id
-        FROM autor
-        WHERE Nombre = '$_POST[autor]'");
+        $resultado_titulo = pg_query($conexion , "
+        SELECT titulo 
+        FROM contenido 
+        WHERE titulo = '$_POST[titulo]'");
 
-        if(pg_num_rows($resultado_id) == 0) {
+        if(pg_num_rows($resultado_titulo) == 0) {
 
-            $sql = "INSERT INTO autor (Nombre) VALUES ('$_POST[autor]')";
-            $resultado = pg_query($conexion, $sql);
+
             $resultado_id = pg_query($conexion, "
             SELECT id
             FROM autor
-            WHERE Nombre = '$_POST[autor]'");
-            
-        } 
+            WHERE Nombre='$_POST[autor]'");
 
-        $resultado_id = pg_fetch_array($resultado_id);
+            if(pg_num_rows($resultado_id) == 0) {
 
-        $sql = "INSERT INTO contenido (titulo, autor_id, contenido, categoria) 
-            VALUES ('$_POST[titulo]', '$resultado_id[0]', '$_POST[contenido]', '$_POST[categories]')";
-    
-        $resultado = pg_query($conexion, $sql);
+                $sql = "INSERT INTO autor (Nombre) VALUES ('$_POST[autor]')";
+                $resultado = pg_query($conexion, $sql);
+                $resultado_id = pg_query($conexion, "
+                SELECT id
+                FROM autor
+                WHERE Nombre = '$_POST[autor]'");
+                
+            } 
 
-        if($resultado) {
+            $resultado_id = pg_fetch_array($resultado_id);
 
-            $sentencia = "COMMIT;";
-            $_SESSION['mensaje'] = "Publicación agregada correctamente. Complete los campos para agregar otra obra.";
+            $sql = "INSERT INTO contenido (titulo, autor_id, contenido, categoria) 
+                VALUES (LTRIM(RTRIM('$_POST[titulo]')), '$resultado_id[0]', '$_POST[contenido]', '$_POST[categories]')";
+        
+            $resultado = pg_query($conexion, $sql);
 
+            if($resultado) {
+
+                $sentencia = "COMMIT;";
+                $_SESSION['mensaje'] = "Publicación agregada correctamente. Complete los campos para agregar otra obra.";
+
+            } else {
+
+                $sentencia = "ROLLBACK;";
+                $_SESSION['mensaje'] = "Error al agregar la publicación";
+
+            }
+        
+            pg_query($conexion, $sentencia);
+        
         } else {
 
-            $sentencia = "ROLLBACK;";
-            $_SESSION['mensaje'] = "Error al agregar la publicación";
-
+            $_SESSION['mensaje'] = "Ya existe una obra con ese titulo";
+        
         }
-    
-        pg_query($conexion, $sentencia);
 
     } else {
 
