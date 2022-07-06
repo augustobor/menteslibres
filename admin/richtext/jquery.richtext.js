@@ -1,23 +1,18 @@
 /*
  RichText: WYSIWYG editor developed as jQuery plugin
-
  @name RichText
  @author https://github.com/webfashionist - Bob Schockweiler - richtext@webfashion.eu
  @license GNU AFFERO GENERAL PUBLIC LICENSE Version 3
  @preserve
-
  Copyright (C) 2020 Bob Schockweiler ( richtext@webfashion.eu )
-
  This program is free software: you can redistribute it and/or modify
  it under the terms of the GNU Affero General Public License as published
  by the Free Software Foundation, either version 3 of the License, or
  (at your option) any later version.
-
  This program is distributed in the hope that it will be useful,
  but WITHOUT ANY WARRANTY; without even the implied warranty of
  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  GNU Affero General Public License for more details.
-
  You should have received a copy of the GNU Affero General Public License
  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
@@ -256,7 +251,7 @@
                 html: '<span class="fa fa-paint-brush"></span>'
             }), // font color
             $btnFontSize = $('<a />', {
-                class: "richText-btn-height",
+                class: "richText-btn",
                 "title": settings.translations.addFontSize,
                 html: '<span class="fa fa-text-height"></span>'
             }), // font color
@@ -343,10 +338,10 @@
         $btnFont.append($dropdownOuter.clone().append($fonts.prepend($dropdownClose.clone())));
 
         /* list dropdown for font sizes */
-        var fontSizes = [24, 18, 16, 14, 12];
+        var fontSizes = [48, 32, 28, 24, 16];
         var $fontSizes = $dropdownList.clone();
         for (var i = 0; i < fontSizes.length; i++) {
-            $fontSizes.append($('<li />', {html: '<a style=data-command="fontSize" data-option="' + fontSizes[i] + '">' + settings.translations.text + ' ' + fontSizes[i] + 'px</a>'}));
+            $fontSizes.append($('<li />', {html: '<a style="font-size:' + fontSizes[i] + 'px;" data-command="fontSize" data-option="' + fontSizes[i] + '">' + settings.translations.text + ' ' + fontSizes[i] + 'px</a>'}));
         }
         $btnFontSize.append($dropdownOuter.clone().append($fontSizes.prepend($dropdownClose.clone())));
 
@@ -740,7 +735,7 @@
                     class: 'richText-help-popup',
                     style: 'position:absolute;top:0;right:0;bottom:0;left:0;background-color: rgba(0,0,0,0.3);'
                 });
-                var $inner = $('<div />', {style: 'position:relative;margin:60px auto;padding:20px;background-color:#FAFAFA;width:70%;font-family:Calibri,Verdana,Helvetica,sans-serif;'});
+                var $inner = $('<div />', {style: 'position:relative;margin:60px auto;padding:20px;background-color:#FAFAFA;width:70%;font-family:Calibri,Verdana,Helvetica,sans-serif;font-size:small;'});
                 var $content = $('<div />', {html: '<span id="closeHelp" style="display:block;position:absolute;top:0;right:0;padding:10px;cursor:pointer;" title="' + settings.translations.close + '"><span class="fa fa-times"></span></span>'});
                 $content.append('<h3 style="margin:0;">RichText</h3>');
                 $content.append('<hr><br>Powered by <a href="https://github.com/webfashionist/RichText" target="_blank">webfashionist/RichText</a> (Github) <br>License: <a href="https://github.com/webfashionist/RichText/blob/master/LICENSE" target="_blank">AGPL-3.0</a>');
@@ -1358,8 +1353,8 @@
             } else if (command === "fontSize" && parseInt(option) > 0) {
                 var selection = getSelectedText();
                 selection = (selection + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + '<br>' + '$2');
-                // var html = (settings.useSingleQuotes ? "<span style='font-size:" + option + "px;'>" + selection + "</span>" : '<span style="font-size:' + option + 'px;">' + selection + '</span>');
-                // pasteHTMLAtCaret(html);
+                var html = (settings.useSingleQuotes ? "<span style='font-size:" + option + "px;'>" + selection + "</span>" : '<span style="font-size:' + option + 'px;">' + selection + '</span>');
+                pasteHTMLAtCaret(html);
             } else {
                 document.execCommand(command, false, option);
             }
@@ -1513,7 +1508,6 @@
                    preSelectionRange.selectNodeContents(containerEl);
                    preSelectionRange.setEnd(range.startContainer, range.startOffset);
                    start = preSelectionRange.toString().length;
-
                    return {
                        start: start,
                        end: start + range.toString().length,
@@ -1531,7 +1525,6 @@
                preSelectionTextRange.moveToElementText(containerEl);
                preSelectionTextRange.setEndPoint("EndToStart", selectedTextRange);
                start = preSelectionTextRange.text.length;
-
                return {
                    start: start,
                    end: start + selectedTextRange.text.length,
@@ -1557,7 +1550,6 @@
                range.setStart(containerEl, 0);
                range.collapse(true);
                var nodeStack = [containerEl], node, foundStart = false, stop = false;
-
                while (!stop && (node = nodeStack.pop())) {
                    if (node.nodeType === 3) {
                        var nextCharIndex = charIndex + node.length;

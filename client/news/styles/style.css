@@ -23,7 +23,6 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    flex-direction: row;
     align-items: center;
     text-align: left;
 }
@@ -53,7 +52,6 @@ section article.noticia {
     margin: 5% 2%;
     width: 100%;
     margin-right: 2rem;
-    width: auto;
     padding: 4%;
     text-align: left;
     border-style: solid;

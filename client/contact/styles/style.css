@@ -85,6 +85,7 @@ section form button:hover {
     border-radius: 10px;
     margin: 5%;
     transition: all 200ms ease;
+    text-decoration: none;
 }
 
 .cafe > img {

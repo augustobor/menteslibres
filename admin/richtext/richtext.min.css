@@ -355,8 +355,8 @@
 
 .richText .richText-toolbar ul li a.richText-btn-code,
 .richText .richText-toolbar ul li a.richText-btn-font, 
-.richText .richText-toolbar ul li a.richText-btn-height,
 .richText .richText-toolbar ul li a.richText-btn-heading,
+/* .richText .richText-toolbar ul li a.richText-btn-height, */
 .richText .richText-toolbar ul li a.richText-btn-align {
     display: none;
 }

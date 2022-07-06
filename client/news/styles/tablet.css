@@ -28,6 +28,12 @@ section article {
     margin-top: 5rem;
 }
 
+section article.noticia {
+    margin: 2%;
+    width: 60%;
+    padding: 2%;
+}
+
 section article h2 {
     font-size: 3rem;
 }

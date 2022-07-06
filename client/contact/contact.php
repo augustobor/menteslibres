@@ -64,9 +64,9 @@
             En el enlace del Cafecito pueden ayudarnos en la producción de ejemplares para 
             donarlos a escuelas, bibliotecas y otros Pabellones Literarios.
         </p>
-        <a href="https://cafecito.app/sebaiako" class="cafe">
+        <a href="https://cafecito.app/sebaiako" target="blank" class="cafe">
             <img src="./imgs/coffe.svg" alt="cafecito"/>
-            <p>Lorem</p>
+            <p>Cafecito</p>
         </a>
     </section>
     <script src="../menu.js"></script>

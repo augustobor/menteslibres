@@ -17,7 +17,7 @@
 
             $_SESSION['admin'] = 1;
             $_SESSION["ultimoAcceso"]= date("Y-n-j H:i:s");
-            $_SESSION['tiempo'] = 100;
+            $_SESSION['tiempo'] = 600;
             
             header("Location: ../../main/index.php");
 
