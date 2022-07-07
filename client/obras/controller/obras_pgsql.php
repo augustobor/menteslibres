@@ -4,7 +4,7 @@
     
     if($conexion) {
 
-        $ID_MENTES = "53";
+        $ID_MENTES = "1";
 
         $sql ="SELECT nombre, titulo, contenido.id
         FROM contenido  

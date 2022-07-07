@@ -5,15 +5,13 @@
 
     if($conexion) {
 
-        $sql = "SELECT nombre_usuario, password 
-        FROM admin 
-        WHERE nombre_usuario = '$_POST[user]' AND password = '$_POST[password]'";
+        $sql= "SELECT * FROM admin WHERE nombre_usuario = '$_POST[user]'";
 
         $resultado = pg_query($conexion, $sql);
-
+        $buscarpass = pg_fetch_array($resultado);
         $row_number = pg_num_rows($resultado);
 
-        if($row_number == 1) {
+        if(($row_number == 1) && (password_verify($_POST['password'], $buscarpass['password']))) {
 
             $_SESSION['admin'] = 1;
             $_SESSION["ultimoAcceso"]= date("Y-n-j H:i:s");
