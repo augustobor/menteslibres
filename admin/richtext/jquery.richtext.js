@@ -338,7 +338,7 @@
         $btnFont.append($dropdownOuter.clone().append($fonts.prepend($dropdownClose.clone())));
 
         /* list dropdown for font sizes */
-        var fontSizes = [48, 32, 28, 24, 16];
+        var fontSizes = [48, 40, 32, 28, 24, 16];
         var $fontSizes = $dropdownList.clone();
         for (var i = 0; i < fontSizes.length; i++) {
             $fontSizes.append($('<li />', {html: '<a style="font-size:' + fontSizes[i] + 'px;" data-command="fontSize" data-option="' + fontSizes[i] + '">' + settings.translations.text + ' ' + fontSizes[i] + 'px</a>'}));
