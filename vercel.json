@@ -1,11 +1,11 @@
 {
   "functions": {
-    "./index.php": {
+    "index.php": {
       "runtime": "vercel-php@0.4.0"
     }
   },
   "rewrites": [
     { "source": "assets/favicon.ico", "destination": "https://juicy.vercel.app/favicon.ico" },
-    { "source": "/(.*)", "destination": "./index.php" }
+    { "source": "/(.*)", "destination": "/index.php" }
   ]
 }
