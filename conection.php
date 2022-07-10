@@ -1,7 +1,8 @@
 <?php
     
-    include realpath(__DIR__ . '/vendor/autoload.php');
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    include('vendor/autoload.php');
+
+    $dotenv = Dotenv\Dotenv::createImmutable('../../');
     $dotenv->load();
     
     $server = $_ENV['HOST'];
