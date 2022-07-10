@@ -13,7 +13,7 @@
     try {
         $conexion = pg_connect("host=$server dbname=$db user=$user password=$password");
     } catch (PDOEception $e) {
-        echo "La conexión falló: " . $e->getMessage();
+        echo "La conexión falló: . $e->getMessage()";
 
     }
 
