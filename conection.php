@@ -5,10 +5,10 @@
     // $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     // $dotenv->load();
 
-    $server = $_ENV['HOST'];
-    $user = $_ENV['USER'];
-    $password = $_ENV['PASS'];
-    $db = $_ENV['NAME'];
+    $server = process.env.HOST;
+    $user = process.env.USER;
+    $password = process.env.PASS; 
+    $db = process.env.NAME;
 
     try {
         $conexion = pg_connect("host=$server dbname=$db user=$user password=$password");
