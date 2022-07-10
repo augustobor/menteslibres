@@ -10,6 +10,11 @@
     $password = $_ENV['PASS'];
     $db = $_ENV['NAME'];
 
+    echo "<h2>.$_ENV[USER]</h2>";
+    echo "<h2>.$_ENV[HOST]</h2>";
+    echo "<h2>.$_ENV[PASS]</h2>";
+    echo "<h2>.$_ENV[NAME]</h2>";
+
     try {
         $conexion = pg_connect("host=$server dbname=$db user=$user password=$password");
     } catch (PDOEception $e) {
