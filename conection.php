@@ -4,7 +4,7 @@
     
     require('vendor/autoload.php');
     
-    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv = Dotenv\Dotenv::createImmutable('../../');
     $dotenv->load();
 
     echo "<h2>aaaa</h2>";
