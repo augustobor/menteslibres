@@ -10,10 +10,10 @@
     $password = $_ENV['PASS'];
     $db = $_ENV['NAME'];
 
-    echo "<h2>.$_ENV[USER]</h2>";
-    echo "<h2>.$_ENV[HOST]</h2>";
-    echo "<h2>.$_ENV[PASS]</h2>";
-    echo "<h2>.$_ENV[NAME]</h2>";
+    echo "<h2>.$server</h2>";
+    echo "<h2>.$user</h2>";
+    echo "<h2>.$password</h2>";
+    echo "<h2>.$db</h2>";
 
     try {
         $conexion = pg_connect("host=$server dbname=$db user=$user password=$password");
