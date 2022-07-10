@@ -11,6 +11,7 @@
     $password = $_ENV['PASS'];
 
 
+    echo "<h2>$server</h2>";
     // $server = "ec2-34-239-241-121.compute-1.amazonaws.com";
     // $db = "d90jgeq02bkqt6";
     // $user = "uygtvqcrjchubw";
