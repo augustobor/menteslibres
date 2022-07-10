@@ -1,9 +1,13 @@
 <?php
 
+    echo "<h2>bbbbb</h2>";
+    
     require __DIR__ . '/vendor/autoload.php';
     
     $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
     $dotenv->load();
+
+    echo "<h2>aaaa</h2>";
 
     $server = $_ENV['HOST'];
     $user = $_ENV['USER'];
@@ -14,7 +18,6 @@
     echo "<h2>$user</h2>";
     echo "<h2>$password</h2>";
     echo "<h2>$db</h2>";
-    echo "<h2>aaaa</h2>";
 
     try {
         $conexion = pg_connect("host=$server dbname=$db user=$user password=$password");
