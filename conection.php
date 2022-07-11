@@ -1,5 +1,7 @@
 <?php
     
+    //Trabajar con este modelo de conexión para deploy 
+        
     require('vendor/autoload.php');
 
     $dotenv = Dotenv\Dotenv::createImmutable('../../');
