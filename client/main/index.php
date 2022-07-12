@@ -32,7 +32,7 @@
     <menu class="menu-desktop">
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="../about/about.php">Quiénes somos</a></li>
+            <li><a href="../about/about">Quiénes somos</a></li>
             <li><a href="../obras/obras.php">Obras</a></li>
             <li><a href="../news/news.php">Noticias</a></li>
             <li><a href="../contact/contact.php">Contacto</a></li>
