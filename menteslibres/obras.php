@@ -47,7 +47,7 @@
         <ul> 
             <h2>Autores</h2>
             <?php
-                require("./obras/controller/obras_pgsql.php");
+                include("./obras/controller/obras_pgsql.php");
             ?>
         </ul>
     </section>

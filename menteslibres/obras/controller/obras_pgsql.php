@@ -1,5 +1,5 @@
 <?php
-    require("../../conection.php");
+    require("../conection.php");
     error_reporting(0);
     
     if($conexion) {
@@ -19,13 +19,13 @@
         echo "<li class='autor first'>";
         echo "<div>";
         echo "<h3>".$row[0]."</h3>";
-        echo "<img class='menu-arrow' src=../../assets/arrow.svg alt=''/>";
+        echo "<img class='menu-arrow' src=../assets/arrow.svg alt=''/>";
         echo "</div>";
         echo "<ul>";
         echo "<li class='categoria'>";
         echo "<div>";
         echo "<h4>Descripción</h4>";
-        echo "<img class='menu-arrow' src=../../assets/arrow.svg alt=''/>";
+        echo "<img class='menu-arrow' src=../assets/arrow.svg alt=''/>";
         echo "</div>";
         echo "<ul>";
         echo "<li class='obra'>";
@@ -52,7 +52,7 @@
             echo "<li class='autor'>";
             echo "<div>";
             echo "<h3>".$row[0]."</h3>";
-            echo "<img class='menu-arrow' src=../../assets/arrow.svg alt=''/>";
+            echo "<img class='menu-arrow' src=../assets/arrow.svg alt=''/>";
             echo "</div>";
             echo "<ul>";
 
@@ -67,7 +67,7 @@
                 echo "<li class='categoria'>";
                 echo "<div>";
                 echo "<h4>".$row[2]."</h4>";
-                echo "<img class='menu-arrow' src=../../assets/arrow.svg alt=''/>";
+                echo "<img class='menu-arrow' src=../assets/arrow.svg alt=''/>";
                 echo "</div>";
                 echo "<ul>";
 
