@@ -25,21 +25,21 @@
     <menu class="menu-mobile">
         <img id="menuIcon" src="../../assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
-            <li><a href="../main/index.php">Inicio</a></li>
+            <li><a href="../main/index">Inicio</a></li>
             <li><a href="#">Quiénes somos</a></li>
-            <li><a href="../obras/obras.php">Obras</a></li>
-            <li><a href="../news/news.php">Noticias</a></li>
-            <li><a href="../contact/contact.php">Contacto</a></li>
+            <li><a href="../obras/obras">Obras</a></li>
+            <li><a href="../news/news">Noticias</a></li>
+            <li><a href="../contact/contact">Contacto</a></li>
         </ul>
     </menu>
 
     <menu class="menu-desktop">
         <ul>
-            <li><a href="../main/index.php">Inicio</a></li>
+            <li><a href="../main/index">Inicio</a></li>
             <li><a href="#">Quiénes somos</a></li>
-            <li><a href="../obras/obras.php">Obras</a></li>
-            <li><a href="../news/news.php">Noticias</a></li>
-            <li><a href="../contact/contact.php">Contacto</a></li>
+            <li><a href="../obras/obras">Obras</a></li>
+            <li><a href="../news/news">Noticias</a></li>
+            <li><a href="../contact/contact">Contacto</a></li>
         </ul>
     </menu>
 

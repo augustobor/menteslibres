@@ -22,10 +22,10 @@
         <img id="menuIcon" src="../../assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
             <li><a href="#">Inicio</a></li>
-            <li><a href="../about/about.php">Quiénes somos</a></li>
-            <li><a href="../obras/obras.php">Obras</a></li>
-            <li><a href="../news/news.php">Noticias</a></li>
-            <li><a href="../contact/contact.php">Contacto</a></li>
+            <li><a href="../about/about">Quiénes somos</a></li>
+            <li><a href="../obras/obras">Obras</a></li>
+            <li><a href="../news/news">Noticias</a></li>
+            <li><a href="../contact/contact">Contacto</a></li>
         </ul>
     </menu>
 
@@ -33,9 +33,9 @@
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="../about/about">Quiénes somos</a></li>
-            <li><a href="../obras/obras.php">Obras</a></li>
-            <li><a href="../news/news.php">Noticias</a></li>
-            <li><a href="../contact/contact.php">Contacto</a></li>
+            <li><a href="../obras/obras">Obras</a></li>
+            <li><a href="../news/news">Noticias</a></li>
+            <li><a href="../contact/contact">Contacto</a></li>
         </ul>
     </menu>
 
