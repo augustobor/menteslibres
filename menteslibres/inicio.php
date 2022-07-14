@@ -3,39 +3,41 @@
 <head>
 
     <?php
-        include('../../meta_tags.php');
+        include('../meta_tags.php');
     ?>
 
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 680px)">
-    <link rel="stylesheet" type="text/css" href="./styles/desktop.css" media="screen and (min-width: 800px)">    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="./main/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./main/styles/tablet.css" media="screen and (min-width: 680px)">
+    <link rel="stylesheet" type="text/css" href="./main/styles/desktop.css" media="screen and (min-width: 800px)">    
     
     <title>Inicio</title>
 </head>
 <body>
 
     <header>
-        <img src="./imgs/cabecera_inicio.webp" alt="pabellón literario"/>
+        <img src="./main/imgs/cabecera_inicio.webp" alt="pabellón literario"/>
     </header>
 
     <menu class="menu-mobile">
-        <img id="menuIcon" src="../../assets/burger-menu.svg" alt="hamburger-icon"/>
+        <img id="menuIcon" src="../assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
             <li><a href="#">Inicio</a></li>
-            <li><a href="../about/about">Quiénes somos</a></li>
-            <li><a href="../obras/obras">Obras</a></li>
-            <li><a href="../news/news">Noticias</a></li>
-            <li><a href="../contact/contact">Contacto</a></li>
+            <li><a href="./quienes_somos">Quiénes somos</a></li>
+            <li><a href="./obras">Obras</a></li>
+            <li><a href="./noticias">Noticias</a></li>
+            <li><a href="./contacto">Contacto</a></li>
         </ul>
     </menu>
 
     <menu class="menu-desktop">
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="../about/about">Quiénes somos</a></li>
-            <li><a href="../obras/obras">Obras</a></li>
-            <li><a href="../news/news">Noticias</a></li>
-            <li><a href="../contact/contact">Contacto</a></li>
+            <li><a href="./quienes_somos">Quiénes somos</a></li>
+            <li><a href="./obras">Obras</a></li>
+            <li><a href="./noticias">Noticias</a></li>
+            <li><a href="./contacto">Contacto</a></li>
         </ul>
     </menu>
 
@@ -49,11 +51,11 @@
             </p>
             <hr/>
         </article>
-        <img src="./imgs/inicio_1.webp" alt="foto de entrega de obras"/>
+        <img src="./main/imgs/inicio_1.webp" alt="foto de entrega de obras"/>
     </section>
 
     <section>
-        <img src="./imgs/inicio_2.webp" alt="foto presentando obra"/>
+        <img src="./main/imgs/inicio_2.webp" alt="foto presentando obra"/>
         <article>
             <p>
             Todo esto es posible gracias a la dedicación de cada escritor de Mentes Libres. 
@@ -66,12 +68,12 @@
         <p>website made by Augusto Borromeo</p>
         <div>
             <a target="_blank" class="github" href="https://github.com/augustobor" rel="noreferrer">
-                <img src="./imgs/bxl-github.svg" alt="imagen de github">
+                <img src="./main/imgs/bxl-github.svg" alt="imagen de github">
             </a>
             <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/augusto-borromeo-b75255218/" rel="noreferrer">
-                <img src="./imgs/bxl-linkedin-square.svg" alt="foto de linkedin">
+                <img src="./main/imgs/bxl-linkedin-square.svg" alt="foto de linkedin">
             </a>
         </div>
     </footer>
-    <script src="../menu.js"></script>
+    <script src="./menu.js"></script>
 </body>

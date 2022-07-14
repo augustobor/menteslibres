@@ -1,3 +1,3 @@
 <?php
-    header("Location: ./client/main/index.php");
+    header("Location: ./menteslibres/inicio.php");
 ?>

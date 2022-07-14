@@ -3,43 +3,43 @@
 <head>
     
     <?php
-        include('../../meta_tags.php');
+        include('../meta_tags.php');
     ?>
 
-    <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="shortcut icon" href="../assets/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 680px)">
-    <link rel="stylesheet" type="text/css" href="./styles/desktop.css" media="screen and (min-width: 800px)"> 
+    <link rel="stylesheet" type="text/css" href="./about/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./about/styles/tablet.css" media="screen and (min-width: 680px)">
+    <link rel="stylesheet" type="text/css" href="./about/styles/desktop.css" media="screen and (min-width: 800px)"> 
     
     <title>Quienes Somos</title>
 </head>
 <body>
 
     <header>
-        <img src="./imgs/header_convivencia.webp" alt="foto de convivencia"/>
+        <img src="./about/imgs/header_convivencia.webp" alt="foto de convivencia"/>
     </header>
 
     <nav>
 
     <menu class="menu-mobile">
-        <img id="menuIcon" src="../../assets/burger-menu.svg" alt="hamburger-icon"/>
+        <img id="menuIcon" src="../assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
-            <li><a href="../main/index">Inicio</a></li>
+            <li><a href="./inicio">Inicio</a></li>
             <li><a href="#">Quiénes somos</a></li>
-            <li><a href="../obras/obras">Obras</a></li>
-            <li><a href="../news/news">Noticias</a></li>
-            <li><a href="../contact/contact">Contacto</a></li>
+            <li><a href="./obras">Obras</a></li>
+            <li><a href="./noticias">Noticias</a></li>
+            <li><a href="./contacto">Contacto</a></li>
         </ul>
     </menu>
 
     <menu class="menu-desktop">
         <ul>
-            <li><a href="../main/index">Inicio</a></li>
+            <li><a href="./inicio">Inicio</a></li>
             <li><a href="#">Quiénes somos</a></li>
-            <li><a href="../obras/obras">Obras</a></li>
-            <li><a href="../news/news">Noticias</a></li>
-            <li><a href="../contact/contact">Contacto</a></li>
+            <li><a href="./obras">Obras</a></li>
+            <li><a href="./noticias">Noticias</a></li>
+            <li><a href="./contacto">Contacto</a></li>
         </ul>
     </menu>
 
@@ -56,11 +56,11 @@
             </p>
             <hr/>
         </article>
-        <img src="./imgs/convivencia_1.webp" alt="En estudio"/>
+        <img src="./about/imgs/convivencia_1.webp" alt="En estudio"/>
     </section>
 
     <section>
-        <img src="./imgs/convivencia_2.webp" alt="Jugando"/>
+        <img src="./about/imgs/convivencia_2.webp" alt="Jugando"/>
         <article>
             <p>
                 Contamos con normas de convivencia, incluyendo el respeto entre pares. 
@@ -91,11 +91,11 @@
             </p>
             <hr/>
         </article>
-        <img src="./imgs/convivencia_3.webp" alt="En clases"/>
+        <img src="./about/imgs/convivencia_3.webp" alt="En clases"/>
     </section>
 
     <section>
-        <img src="./imgs/convivencia_4.webp" alt="En estudio"/>
+        <img src="./about/imgs/convivencia_4.webp" alt="En estudio"/>
         <article>
             <p>
                 Mentes Libres tiene coordinadores tanto internos como externos. 
@@ -121,8 +121,8 @@
             </p>
             <hr/>
         </article>
-        <img src="./imgs/convivencia_5.webp" alt="En estudio"/>
+        <img src="./about/imgs/convivencia_5.webp" alt="En estudio"/>
     </section>
 
-    <script src="../menu.js"></script>
+    <script src="./menu.js"></script>
 </body>

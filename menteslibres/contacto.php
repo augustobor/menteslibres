@@ -3,14 +3,14 @@
 <head>
     
     <?php
-        include('../../meta_tags.php');
+        include('../meta_tags.php');
     ?>
     
-    <link rel="shortcut icon" href="../../favicon.png">
+    <link rel="shortcut icon" href="../assets/favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
-    <link rel="stylesheet" type="text/css" href="./styles/tablet.css" media="screen and (min-width: 680px)">
-    <link rel="stylesheet" type="text/css" href="./styles/desktop.css" media="screen and (min-width: 800px)"> 
+    <link rel="stylesheet" type="text/css" href="./contact/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./contact/styles/tablet.css" media="screen and (min-width: 680px)">
+    <link rel="stylesheet" type="text/css" href="./contact/styles/desktop.css" media="screen and (min-width: 800px)"> 
     
     <title>Contacto</title>
 </head>
@@ -21,22 +21,22 @@
     </header>
 
     <menu class="menu-mobile">
-        <img id="menuIcon" src="../../assets/burger-menu.svg" alt="hamburger-icon"/>
+        <img id="menuIcon" src="../assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
-            <li><a href="../main/index">Inicio</a></li>
-            <li><a href="../about/about">Quiénes somos</a></li>
-            <li><a href="../obras/obras">Obras</a></li>
-            <li><a href="../news/news">Noticias</a></li>
+            <li><a href="./inicio">Inicio</a></li>
+            <li><a href="./quienes_somos">Quiénes somos</a></li>
+            <li><a href="./obras">Obras</a></li>
+            <li><a href="./noticias">Noticias</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
     </menu>
 
     <menu class="menu-desktop">
         <ul>
-            <li><a href="../main/index">Inicio</a></li>
-            <li><a href="../about/about">Quiénes somos</a></li>
-            <li><a href="../obras/obras">Obras</a></li>
-            <li><a href="../news/news">Noticias</a></li>
+            <li><a href="./inicio">Inicio</a></li>
+            <li><a href="./quienes_somos">Quiénes somos</a></li>
+            <li><a href="./obras">Obras</a></li>
+            <li><a href="./noticias">Noticias</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
     </menu>
@@ -65,10 +65,10 @@
             donarlos a escuelas, bibliotecas y otros Pabellones Literarios.
         </p>
         <a href="https://cafecito.app/sebaiako" target="blank" class="cafe">
-            <img src="./imgs/coffe.svg" alt="cafecito"/>
+            <img src="./contact/imgs/coffe.svg" alt="cafecito"/>
             <p>Cafecito</p>
         </a>
     </section>
-    <script src="../menu.js"></script>
-    <script src="./mail.js"></script>
+    <script src="./menu.js"></script>
+    <script src="./contact/mail.js"></script>
 </body>
