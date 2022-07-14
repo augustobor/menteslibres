@@ -25,7 +25,7 @@
         <ul class="activate" id="menu-content">
             <li><a href="./inicio">Inicio</a></li>
             <li><a href="./quienes_somos">Quiénes somos</a></li>
-            <li><a href="./obras">Obras</a></li>
+            <li><a href="./obras.php">Obras</a></li>
             <li><a href="#">Noticias</a></li>
             <li><a href="./contacto">Contacto</a></li>
         </ul>
@@ -35,7 +35,7 @@
         <ul>
             <li><a href="./inicio">Inicio</a></li>
             <li><a href="./quienes_somos">Quiénes somos</a></li>
-            <li><a href="./obras">Obras</a></li>
+            <li><a href="./obras.php">Obras</a></li>
             <li><a href="#">Noticias</a></li>
             <li><a href="./contacto">Contacto</a></li>
         </ul>
