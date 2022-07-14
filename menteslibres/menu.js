@@ -8,9 +8,9 @@ menuIcon.addEventListener('click', (e) => {
 
     const route = e.target.getAttribute('src');
 
-    if(route == "../../assets/burger-menu.svg") {
-        e.target.setAttribute('src', "../../assets/burger-menu-clear.svg")
+    if(route == "../assets/burger-menu.svg") {
+        e.target.setAttribute('src', "../assets/burger-menu-clear.svg")
     } else {
-        e.target.setAttribute('src', "../../assets/burger-menu.svg")
+        e.target.setAttribute('src', "../assets/burger-menu.svg")
     }
 })
