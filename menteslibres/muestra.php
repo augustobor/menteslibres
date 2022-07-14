@@ -20,7 +20,7 @@
 </head>
 <body>
 
-    <a href="./obras" class="btn-home">
+    <a href="./obras.php" class="btn-home">
         <img src="../assets/arrow-left.svg" alt='botón'>
     </a>
 
