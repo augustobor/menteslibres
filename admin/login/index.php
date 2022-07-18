@@ -20,10 +20,6 @@
 </head>
 <body>
 
-    <?php
-        echo password_hash("MarcoLedsLaPlataQueen2022",PASSWORD_DEFAULT);
-    ?>
-
     <h1>Inicia sesión</h1>
 
     <form action="./sql/iniciar_sesion_pgpsql.php" class="login" method="POST">
