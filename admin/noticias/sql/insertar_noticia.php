@@ -10,9 +10,10 @@
 
         if(pg_num_rows($resultado) == 0) {
 
+            $noticia = "$$$_POST[noticia]$$";
     
             $sql = "INSERT INTO noticia (titulo, fecha, noticia) 
-                VALUES ('$_POST[titulo]', NOW(), $$$_POST[noticia]$$)";
+                VALUES ('$_POST[titulo]', NOW(), $noticia)";
         
             $resultado = pg_query($conexion, $sql);
 

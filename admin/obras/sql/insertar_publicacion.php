@@ -31,7 +31,7 @@
             $resultado_id = pg_fetch_array($resultado_id);
 
             $sql = "INSERT INTO contenido (titulo, autor_id, contenido, categoria) 
-                VALUES (LTRIM(RTRIM('$_POST[titulo]')), '$resultado_id[0]', $$$_POST[contenido]$$, '$_POST[categories]')";
+                VALUES (LTRIM(RTRIM('$_POST[titulo]')), '$resultado_id[0]', $_POST[contenido], '$_POST[categories]')";
         
             $resultado = pg_query($conexion, $sql);
 
