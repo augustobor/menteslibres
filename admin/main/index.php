@@ -37,7 +37,6 @@
     <title>Inicio | admin</title>
 </head>
 <body>
-
     <a href="../login/index.php" class="btn-home">
         <img src="../../assets/arrow-left.svg" alt='botón'>
     </a>

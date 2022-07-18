@@ -12,7 +12,7 @@
 
     
             $sql = "INSERT INTO noticia (titulo, fecha, noticia) 
-                VALUES ('$_POST[titulo]', NOW(), '$_POST[noticia]')";
+                VALUES ('$_POST[titulo]', NOW(), $$$_POST[noticia]$$)";
         
             $resultado = pg_query($conexion, $sql);
 
@@ -22,7 +22,7 @@
                 $_SESSION['mensaje'] = "Noticia agregada correctamente.";
 
             } else {
-
+                
                 $sentencia = "ROLLBACK;";
                 $_SESSION['mensaje'] = "Error al agregar la noticia.";
 
