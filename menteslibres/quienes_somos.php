@@ -79,9 +79,7 @@
     <section>
         <article>
             <p>
-                Los orígenes se remontan en la Unidad 23 de Florencio Varela, en el taller 
-                “Cuenteros, verseros y poetas” de Alberto Sarlo y Carlos Mena. 
-                De allí, Guillermo Quiroga llega a la Unidad 9, en el pabellón 18, 
+                Guillermo Quiroga llega a la Unidad 9, en el pabellón 18, 
                 y decide crear el mismo espacio de literatura y filosofía. 
                 De ésta manera, nace “Mentes Libres”, el cual se suscribe al programa de 
                 “Pabellones Literarios para la Libertad” impulsado por Roberto Conti, juez del 
