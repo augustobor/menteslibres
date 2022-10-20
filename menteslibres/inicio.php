@@ -24,20 +24,20 @@
         <img id="menuIcon" src="../assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
             <li><a href="#">Inicio</a></li>
-            <li><a href="./quienes_somos">Quiénes somos</a></li>
-            <li><a href="./obras">Obras</a></li>
-            <li><a href="./noticias">Noticias</a></li>
-            <li><a href="./contacto">Contacto</a></li>
+            <li><a href="./quienes_somos.php">Quiénes somos</a></li>
+            <li><a href="./obras.php">Obras</a></li>
+            <li><a href="./noticias.php">Noticias</a></li>
+            <li><a href="./contacto.php">Contacto</a></li>
         </ul>
     </menu>
 
     <menu class="menu-desktop">
         <ul>
             <li><a href="#">Inicio</a></li>
-            <li><a href="./quienes_somos">Quiénes somos</a></li>
-            <li><a href="./obras">Obras</a></li>
-            <li><a href="./noticias">Noticias</a></li>
-            <li><a href="./contacto">Contacto</a></li>
+            <li><a href="./quienes_somos.php">Quiénes somos</a></li>
+            <li><a href="./obras.php">Obras</a></li>
+            <li><a href="./noticias.php">Noticias</a></li>
+            <li><a href="./contacto.php">Contacto</a></li>
         </ul>
     </menu>
 
