@@ -10,7 +10,7 @@
         $resultado = pg_query($conexion, $sql);
         $buscarpass = pg_fetch_array($resultado);
         $row_number = pg_num_rows($resultado);
-
+ 
         if(($row_number == 1) && (password_verify($_POST['password'], $buscarpass['password']))) {
 
             $_SESSION['admin'] = 1;
