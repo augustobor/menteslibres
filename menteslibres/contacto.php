@@ -23,7 +23,7 @@
     <menu class="menu-mobile">
         <img id="menuIcon" src="../assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
-            <li><a href="./inicio">Inicio</a></li>
+            <li><a href="./inicio.php">Inicio</a></li>
             <li><a href="./quienes_somos.php">Quiénes somos</a></li>
             <li><a href="./obras.php">Obras</a></li>
             <li><a href="./noticias.php">Noticias</a></li>
