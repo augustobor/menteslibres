@@ -1,6 +1,5 @@
 <?php
     require("../conection.php");
-    error_reporting(0);
     
     if($conexion) {
 

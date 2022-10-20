@@ -19,7 +19,11 @@
 
             if(pg_num_rows($resultado_id) == 0) {
 
-                $sql = "INSERT INTO autor (Nombre) VALUES ('$_POST[autor]')";
+                $resul_new_id = pg_query($conexion, "SELECT MAX(id) FROM autor;");
+                $resul_new_id = pg_fetch_array($resul_new_id);
+                $resul_new_id = $resul_new_id[0] + 1;
+
+                $sql = "INSERT INTO autor (id, Nombre) VALUES ('$resul_new_id','$_POST[autor]')";
                 $resultado = pg_query($conexion, $sql);
                 $resultado_id = pg_query($conexion, "
                 SELECT id
@@ -30,8 +34,12 @@
 
             $resultado_id = pg_fetch_array($resultado_id);
 
-            $sql = "INSERT INTO contenido (titulo, autor_id, contenido, categoria) 
-                VALUES (LTRIM(RTRIM('$_POST[titulo]')), '$resultado_id[0]', $$$_POST[contenido]$$, '$_POST[categories]')";
+            $resul_new_id = pg_query($conexion, "SELECT MAX(id) FROM contenido;");
+            $resul_new_id = pg_fetch_array($resul_new_id);
+            $resul_new_id = $resul_new_id[0] + 1;
+
+            $sql = "INSERT INTO contenido (id, titulo, autor_id, contenido, categoria) 
+                VALUES ('$resul_new_id',LTRIM(RTRIM('$_POST[titulo]')), '$resultado_id[0]', $$$_POST[contenido]$$, '$_POST[categories]')";
         
             $resultado = pg_query($conexion, $sql);
 
@@ -61,5 +69,5 @@
     
     }
 
-    header("Location: ../agregar_obra.php");
+    echo "<script> window.location.href='../agregar_obra.php'</script>";
 ?>
