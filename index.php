@@ -1,3 +1,3 @@
 <?php
-    header("Location: ./menteslibres/inicio");
+    header("Location: ./menteslibres/inicio.php");
 ?>

@@ -12,8 +12,12 @@
 
             $noticia = "$$$_POST[noticia]$$";
     
-            $sql = "INSERT INTO noticia (titulo, fecha, noticia) 
-                VALUES ('$_POST[titulo]', NOW(), $noticia)";
+            $resul_new_id = pg_query($conexion, "SELECT MAX(id) FROM noticia;");
+            $resul_new_id = pg_fetch_array($resul_new_id);
+            $resul_new_id = $resul_new_id[0] + 1;
+
+            $sql = "INSERT INTO noticia (id, titulo, fecha, noticia) 
+                VALUES ('$resul_new_id','$_POST[titulo]', NOW(), $noticia)";
         
             $resultado = pg_query($conexion, $sql);
 
