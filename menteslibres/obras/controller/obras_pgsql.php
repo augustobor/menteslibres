@@ -1,6 +1,6 @@
 <?php
     require("../conection.php");
-    
+    error_reporting(0);
     if($conexion) {
 
         $ID_MENTES = "1";
