@@ -7,7 +7,7 @@
     ?>
     
     <link rel="shortcut icon" href="../assets/favicon.ico">
-
+    <meta name="description" content="Mentes Libres Noticias: Augusto.B. Mentes Libres">
     <link rel="stylesheet" type="text/css" href="./news/styles/style.css">
     <link rel="stylesheet" type="text/css" href="./news/styles/tablet.css" media="screen and (min-width: 680px)">
     <link rel="stylesheet" type="text/css" href="./news/styles/desktop.css" media="screen and (min-width: 800px)"> 
