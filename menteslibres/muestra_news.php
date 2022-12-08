@@ -11,7 +11,7 @@
     ?>
     
     <link rel="shortcut icon" href="../assets/favicon.ico">
-
+    <meta name="description" content="Mentes Libres Noticia: Augusto.B. Mentes Libres">
     <link rel="stylesheet" type="text/css" href="./news/controller/styles/style.css">
     <link rel="stylesheet" type="text/css" href="./news/controller/styles/tablet.css" media="screen and (min-width: 680px)">
     <link rel="stylesheet" type="text/css" href="./news/controller/styles/desktop.css" media="screen and (min-width: 800px)"> 
