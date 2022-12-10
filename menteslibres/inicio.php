@@ -8,7 +8,7 @@
 
     <link rel="shortcut icon" href="../assets/favicon.ico">
     <meta name="description" content="Mentes Libres Home Page: Augusto.B. Mentes Libres">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./main/styles/style.css">
     <link rel="stylesheet" type="text/css" href="./main/styles/tablet.css" media="screen and (min-width: 680px)">
     <link rel="stylesheet" type="text/css" href="./main/styles/desktop.css" media="screen and (min-width: 800px)">    
