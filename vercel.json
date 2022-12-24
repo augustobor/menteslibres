@@ -5,6 +5,10 @@
       }
     },
     "routes": [
+<<<<<<< HEAD
       { "src": "/(.*)",  "dest": "/api/index.php" }
+=======
+      { "src": "/",  "dest": "/api/index.php" }
+>>>>>>> 5163e2c (vercel deploy)
     ]
   }
