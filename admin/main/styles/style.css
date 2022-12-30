@@ -1,0 +1,65 @@
+@import url('../../../styles/config.css');
+
+html {
+    height: auto;
+}
+
+body {
+    font-family: 'Rasa', serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 7rem 4rem;
+    padding: 3%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%;
+    margin: 0% 5%;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+section a {
+    padding: 6%;
+    width: 80%;
+    margin: 10% 2%;
+    background-color: var(--palette-old-page);
+    border-style: none;
+    color: var(--just-black);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Rasa', serif;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    font-size: 1.5rem;
+    text-decoration: none;
+    align-items: center;
+}
+
+section a:hover {
+    background-color: var(--palette-good-page);
+    transition: all 200ms ease;
+}
+
+a > img {
+    position:fixed;
+    width: 15%;
+    height: auto;
+	top: 0;
+	left: 0;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    transition: all 200ms ease;
+}
+
+a > img:active {
+    background-color: var(--palette-old-page);
+    transition: all 200ms ease;
+}

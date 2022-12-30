@@ -1,0 +1,6 @@
+{
+    "require": {
+        "vlucas/phpdotenv": "^5.4",
+        "silex/silex": "~1.1"
+    }
+}

@@ -1,0 +1,44 @@
+.menu-mobile ul {
+    width: 50vh;
+	padding: 5% 0%;
+    padding-top: 20%;
+}
+
+.menu-mobile li a, .menu-mobile p {
+	padding-left: 10%;
+	font-size: 5rem;
+}
+
+.menu-mobile img {
+    margin: 7%;
+    transform: scale(1.8);
+}
+
+
+h1 {
+    font-size: 8rem;
+    margin-bottom: 5rem;
+}
+
+section {
+    padding: 2%;
+}
+
+section article {
+    margin-top: 5rem;
+}
+
+section article.noticia {
+    margin: 2%;
+    width: 60%;
+    padding: 2%;
+}
+
+section article h2 {
+    font-size: 3rem;
+}
+
+section article h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}

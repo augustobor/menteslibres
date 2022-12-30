@@ -1,0 +1,26 @@
+
+h1 {
+    font-size: 8rem;
+}
+
+form {
+    margin: 0 25rem; 
+}
+
+.login_input {
+    font-size: x-large;
+}
+
+hr {
+    margin-bottom: 7rem;
+}
+
+.login_submit {
+    font-size: x-large;
+}
+
+.mensaje {
+    margin-left: 40rem;
+    margin-right: 40rem;
+    font-size: x-large;
+}

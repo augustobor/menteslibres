@@ -1,0 +1,42 @@
+.menu-mobile ul {
+    width: 50vh;
+	padding: 5% 0%;
+    padding-top: 20%;
+}
+
+.menu-mobile li a, .menu-mobile p {
+	padding-left: 10%;
+	font-size: 5rem;
+}
+
+.menu-mobile img {
+    margin: 7%;
+    transform: scale(1.8);
+}
+
+section {
+    padding: 1%;
+}
+
+section p {
+    font-size: 2rem;
+}
+
+section input, section textarea {
+    font-size: 2rem;
+}
+
+section form button {
+    width: 30%;
+    font-size: 2.5rem;
+}
+
+
+.cafe > img {
+    transform: scale(2);
+    margin-right: 5rem;
+}
+
+.cafe > p {
+    font-size: 3rem;
+}

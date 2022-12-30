@@ -1,0 +1,107 @@
+@import url('../../../styles/config.css');
+@import url('../../../styles/menu-cel.css');
+
+body {
+    height: auto;
+    font-family: 'Rasa', serif;
+}
+
+header {
+    height: 15vh;
+    background-color: var(--palette-old-page);
+}
+
+.menu-desktop {
+    display: none;
+}
+
+
+section {
+    padding: 5%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+section p {
+    font-size: 1.5rem;
+    margin: 0 10%;
+    font-family: 'Rasa', serif;
+    color: var(--just-black);
+    margin-bottom: 3rem;
+}
+
+section form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+section input, section textarea {
+    margin: 3% 10%;
+	padding: 2%;
+    width: 100%;
+	border-style: solid;
+	border-color: var(--palette-old-page);
+	border-width: 0.5rem;
+	background-color: transparent;
+	font-size: 1.5rem;
+	color: var(--just-black);
+}
+
+section form button {
+    padding: 5%;
+    width: 50%;
+    margin: 5% 2%;
+    background-color: var(--palette-old-page);
+    border-style: none;
+    color: var(--just-black);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Rasa', serif;
+    cursor: pointer;
+    transition: all 200ms ease;
+    font-size: 1.5rem;
+}
+
+section form button:hover {
+    background-color: var(--just-black);
+    color: var(--just-white);
+    transition: all 200ms ease;
+}
+
+
+.cafe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    margin: 5%;
+    transition: all 200ms ease;
+    text-decoration: none;
+}
+
+.cafe > img {
+    transform: scale(1.4);
+    margin-right: 2rem;
+}
+
+.cafe > p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Rasa', serif;
+    color: var(--just-black);
+    margin: 0;
+}
+
+.cafe:hover {
+    transform: scale(1.1);
+    transition: all 200ms ease;
+}

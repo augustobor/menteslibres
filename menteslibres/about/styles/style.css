@@ -1,0 +1,66 @@
+@import url('../../../styles/config.css');
+@import url('../../../styles/menu-cel.css');
+
+
+header {
+    height: auto;
+}
+
+header > img {
+    transform: scale(1);
+    width: 100%;
+    border-bottom-style: solid;
+    border-color: var(--palette-old-page);
+    border-width: 0.5rem;
+}
+
+body {
+    font-family: 'Rasa', serif;
+}
+
+img {
+	font-size: 2rem;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+section {
+    margin-top: 5rem;
+	margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+section article {
+    padding: 10% 20%;
+    text-align: center;
+}
+
+section article p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+
+section article hr {
+    border-style: solid;
+    border-color: var(--palette-red);
+    border-width: 0.2rem;
+}
+
+
+section > img {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2px;
+    width: 50%;
+    height: 50%;
+    border-style: solid;
+    border-color: var(--palette-old-page);
+    border-width: 0.3rem;
+}
