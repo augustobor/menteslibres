@@ -1,4 +1,4 @@
 <?php
     header('content-type: application/json');
-    header("Location: ./inicio.html");
+    header("Location: ./menteslibres/inicio.php");
 ?>
