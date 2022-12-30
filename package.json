@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "now-php": "^0.0.7",
-    "vercel-php": "^0.4.0"
+    "vercel-php": "^0.5.2"
   }
 }
