@@ -3,29 +3,29 @@
 <head>
     
     <?php
-        include('../meta_tags.php');
+        include('./meta_tags.php');
     ?>
 
-    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
     <meta name="description" content="Mentes Libres About: Augusto.B. Mentes Libres">
-    <link rel="stylesheet" type="text/css" href="./about/styles/style.css">
-    <link rel="stylesheet" type="text/css" href="./about/styles/tablet.css" media="screen and (min-width: 680px)">
-    <link rel="stylesheet" type="text/css" href="./about/styles/desktop.css" media="screen and (min-width: 800px)"> 
+    <link rel="stylesheet" type="text/css" href="./menteslibres/about/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./menteslibres/about/styles/tablet.css" media="screen and (min-width: 680px)">
+    <link rel="stylesheet" type="text/css" href="./menteslibres/about/styles/desktop.css" media="screen and (min-width: 800px)"> 
     
     <title>Quienes Somos</title>
 </head>
 <body>
 
     <header>
-        <img src="./about/imgs/header_convivencia.webp" alt="foto de convivencia"/>
+        <img src="./menteslibres/about/imgs/header_convivencia.webp" alt="foto de convivencia"/>
     </header>
 
     <nav>
 
     <menu class="menu-mobile">
-        <img id="menuIcon" src="../assets/burger-menu.svg" alt="hamburger-icon"/>
+        <img id="menuIcon" src="./assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
-            <li><a href="./iniciozz">Inicio</a></li>
+            <li><a href="./inicio.php">Inicio</a></li>
             <li><a href="#">Quiénes somos</a></li>
             <li><a href="./obras.php">Obras</a></li>
             <li><a href="./noticias.php">Noticias</a></li>
@@ -56,11 +56,11 @@
             </p>
             <hr/>
         </article>
-        <img src="./about/imgs/convivencia_1.webp" alt="En estudio"/>
+        <img src="./menteslibres/about/imgs/convivencia_1.webp" alt="En estudio"/>
     </section>
 
     <section>
-        <img src="./about/imgs/convivencia_2.webp" alt="Jugando"/>
+        <img src="./menteslibres/about/imgs/convivencia_2.webp" alt="Jugando"/>
         <article>
             <p>
                 Contamos con normas de convivencia, incluyendo el respeto entre pares. 
@@ -89,11 +89,11 @@
             </p>
             <hr/>
         </article>
-        <img src="./about/imgs/convivencia_3.webp" alt="En clases"/>
+        <img src="./menteslibres/about/imgs/convivencia_3.webp" alt="En clases"/>
     </section>
 
     <section>
-        <img src="./about/imgs/convivencia_4.webp" alt="En estudio"/>
+        <img src="./menteslibres/about/imgs/convivencia_4.webp" alt="En estudio"/>
         <article>
             <p>
                 Mentes Libres tiene coordinadores tanto internos como externos. 
@@ -119,8 +119,8 @@
             </p>
             <hr/>
         </article>
-        <img src="./about/imgs/convivencia_5.webp" alt="En estudio"/>
+        <img src="./menteslibres/about/imgs/convivencia_5.webp" alt="En estudio"/>
     </section>
 
-    <script src="./menu.js"></script>
+    <script src="./menteslibres/menu.js"></script>
 </body>

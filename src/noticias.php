@@ -3,14 +3,14 @@
 <head>
 
     <?php
-        include('../meta_tags.php');
+        include('./meta_tags.php');
     ?>
     
-    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
     <meta name="description" content="Mentes Libres Noticias: Augusto.B. Mentes Libres">
-    <link rel="stylesheet" type="text/css" href="./news/styles/style.css">
-    <link rel="stylesheet" type="text/css" href="./news/styles/tablet.css" media="screen and (min-width: 680px)">
-    <link rel="stylesheet" type="text/css" href="./news/styles/desktop.css" media="screen and (min-width: 800px)"> 
+    <link rel="stylesheet" type="text/css" href="./menteslibres/news/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./menteslibres/news/styles/tablet.css" media="screen and (min-width: 680px)">
+    <link rel="stylesheet" type="text/css" href="./menteslibres/news/styles/desktop.css" media="screen and (min-width: 800px)"> 
     
     <title>Novedades</title>
 </head>
@@ -21,9 +21,9 @@
     </header>
 
     <menu class="menu-mobile">
-        <img id="menuIcon" src="../assets/burger-menu.svg" alt="hamburger-icon"/>
+        <img id="menuIcon" src="./assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
-            <li><a href="./inicioz">Inicio</a></li>
+            <li><a href="./inicio.php">Inicio</a></li>
             <li><a href="./quienes_somos.php">Quiénes somos</a></li>
             <li><a href="./obras.php">Obras</a></li>
             <li><a href="#">Noticias</a></li>
@@ -46,11 +46,11 @@
     <section class='media'>
 
         <?php
-            require('./news/controller/news_pgsql.php');
+            require('./menteslibres/news/controller/news_pgsql.php');
         ?>
         
     </section>
 
-    <script src="./menu.js"></script>
-    <script src='./news/lista.js'></script>
+    <script src="./menteslibres/menu.js"></script>
+    <script src='./menteslibres/news/lista.js'></script>
 </body>

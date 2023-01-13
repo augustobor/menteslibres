@@ -3,14 +3,14 @@
 <head>
     
     <?php
-        include('../meta_tags.php');
+        include('./meta_tags.php');
     ?>
     
-    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
     <meta name="description" content="Mentes Libres Contact: Augusto.B. Mentes Libres">
-    <link rel="stylesheet" type="text/css" href="./contact/styles/style.css">
-    <link rel="stylesheet" type="text/css" href="./contact/styles/tablet.css" media="screen and (min-width: 680px)">
-    <link rel="stylesheet" type="text/css" href="./contact/styles/desktop.css" media="screen and (min-width: 800px)"> 
+    <link rel="stylesheet" type="text/css" href="./menteslibres/contact/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./menteslibres/contact/styles/tablet.css" media="screen and (min-width: 680px)">
+    <link rel="stylesheet" type="text/css" href="./menteslibres/contact/styles/desktop.css" media="screen and (min-width: 800px)"> 
     
     <title>Contacto</title>
 </head>
@@ -21,7 +21,7 @@
     </header>
 
     <menu class="menu-mobile">
-        <img id="menuIcon" src="../assets/burger-menu.svg" alt="hamburger-icon"/>
+        <img id="menuIcon" src="./assets/burger-menu.svg" alt="hamburger-icon"/>
         <ul class="activate" id="menu-content">
             <li><a href="./inicio.php">Inicio</a></li>
             <li><a href="./quienes_somos.php">Quiénes somos</a></li>
@@ -65,10 +65,10 @@
             donarlos a escuelas, bibliotecas y otros Pabellones Literarios.
         </p>
         <a href="https://cafecito.app/sebaiako" target="blank" class="cafe">
-            <img src="./contact/imgs/coffe.svg" alt="cafecito"/>
+            <img src="./menteslibres/contact/imgs/coffe.svg" alt="cafecito"/>
             <p>Cafecito</p>
         </a>
     </section>
-    <script src="./menu.js"></script>
-    <script src="./contact/mail.js"></script>
+    <script src="./menteslibres/menu.js"></script>
+    <script src="./menteslibres/contact/mail.js"></script>
 </body>
