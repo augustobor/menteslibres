@@ -19,13 +19,13 @@ I use a postgresql DB to insert & show the texts on the website. To manage the b
 
 #### 🧑🏻‍💻 dev tools used
 
-- [![HTML](https://img.shields.io/badge/html-E34C26?style=for-the-badge&logo=html5&logoColor=F06529&labelColor=000000)]()
-- [![CSS](https://img.shields.io/badge/css-66D3FA?style=for-the-badge&logo=css3&logoColor=3C99DC&labelColor=D5F3FE)]()
-- [![JavaScript](https://img.shields.io/badge/JavaScript-F0DB4F?style=for-the-badge&logo=javascript&logoColor=F7DF1E&labelColor=323330)]()
-- [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-101010?style=for-the-badge&logo=postgresql&logoColor=FAFAFA&labelColor=2F6190)]()
-- [![PHP](https://img.shields.io/badge/php-474A8A?style=for-the-badge&logo=php&logoColor=787CB5&labelColor=000000)]()
+- <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
+- <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
+- <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+- <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
+- <a href="https://www.php.net/manual/es/intro-whatis.php" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a>
 
 #### 🎨 art tools used
 
-- [![Figma](https://img.shields.io/badge/figma-CB3234?style=for-the-badge&logo=figma&logoColor=CB3234&labelColor=101010)]() 
+- <a href="https://www.figma.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="figma" width="40" height="40"/> </a> 
 - [![AdobeXD](https://img.shields.io/badge/adobeXD-2E001F?style=for-the-badge&logo=adobeXD&logoColor=2E001F&labelColor=FF26BE)]() 
